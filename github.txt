@@ -21,5 +21,16 @@
     4. vscode 왼쪽 메뉴에 [소스 제어]탭 클릭
     5. github 게시 -> 로그인 -> 웹페이지 로그인진행 -> 컨티뉴
     6. publish to github public repository 본인아이디/ 프로젝트명(최상위 폴더명)
-    7. vscode
+    7. vscode 상단메뉴 -> 터미널 -> 새 터미널 -> +옆에 v 클릭 -> git bash
     8. 
+        git user. name 확인 - git config --global user.name
+        git user. name 설정 - git config --global user.name git아이디
+        git user. email 확인 - git config --global user.email
+        git user. email 설정 - git config --global user.email git아이디@이메일 포함
+
+    9. vscode 왼쪽 메뉴 에 소스제어 탭 클릭 -> 메시지 입력칸 = 기록메시지
+
+    10. 커밋 및 푸시
+        * 만일 최초/pc변경시 git 사용이면 [git 로그인창] 나오면 브라우저 로그인 처리
+
+    -만약 레포지토리 원격 없음이 뜨면 추가 누르고 위 push 및 commit
