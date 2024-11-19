@@ -39,7 +39,7 @@
 .parent{
     background-color: blue;
     padding: 10px;
-    position: relative; /* 여기에 relative가 들어가서 여기로 바뀜 */
+    position: relative; /* 여기에 relative가 들어가서  box6가 여기로 바뀜*/
 }
 
 .box6{
