@@ -1,0 +1,52 @@
+li{list-style-type: none;}
+*{padding: 0; margin: 0px;}
+
+#header{
+    background-color: antiquewhite;
+}
+#header > ul {
+    display: flex; justify-content: center;
+}
+
+#header > ul > li {
+    list-style-type: none; /* 글머리 제거 */
+    padding: 20px;
+    position:relative;
+}
+
+#header .submenu{
+    display: none; /* block, inline, inline-block, none, flex */
+    position: absolute; /* 절대적인 위치 =조상 요소 기준 */
+    top: 50px; /* 위에서부터 10px만큼 아래로 이동 */
+    left: 0px;
+    background-color: beige;
+    padding: 10px;
+}
+    /* 지전된 li 마크업을 hover 했을때 */
+    /* 선택자: hover 변경할 선택자{} */
+#header > ul > .menu:hover .submenu{
+    display: block; /* 기존의 display:none 값을 hover 했을때 block 으로 css 변경 */
+}
+
+/* 예제2======================================= */
+
+#header2{background-color: skyblue;}
+#header2 >ul {
+    display: flex; justify-content: center;
+}
+#header2 > ul > li{ padding: 10px;}
+#header2  {position: relative;}
+#header2 .submenu2 {
+    position: absolute;
+     top : 40px;
+    display: none;
+    background-color: skyblue;
+    width: 100%; padding: 10px 0px; margin: 0 auto;
+    
+}
+
+
+/* 지전된 ul 마크업을 hover했을때 서브메뉴 전체 열기 */
+#header2 > ul:hover .submenu2{
+    display: block;
+}
