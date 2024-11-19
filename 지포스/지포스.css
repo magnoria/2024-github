@@ -1,4 +1,4 @@
-/* 기본 설정 */
+/* 기본 설정 */ /* px 전체 안잡음  가로설정 나중에 따로 잡아야함*/
 * {
     margin: 0;
     padding: 0;
@@ -19,11 +19,12 @@
   
   /* 수동 드라이버 검색 */
   .search {
+   
     flex: 1;
     background: #fff;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    
   }
   .search h2 {
     margin-bottom: 20px;
@@ -62,13 +63,14 @@
   }
   .news2 {
     display: flex;
-    gap:20px /* img 간격 */
+    gap: 20px; /* img 간격 */
   }
   .card {
     background: #fff;
     padding: 15px;
     border-radius: 8px;
-    text-align: center;
+    /* text-align: center; */
+
   }
   .card img {
     max-width: 100%;
