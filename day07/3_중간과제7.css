@@ -1,0 +1,34 @@
+
+/* 부모요소 */
+.parent{
+    width: 700px; /* 크기를 잡자 */
+    height: 500px;
+    background-color: antiquewhite;
+    margin: 0 auto; /* 구역 가운데 정렬 */
+    position: relative; /* 하위 요소의 absolute 기준점 설정 */
+}
+
+/* 하위요소 */
+.box{
+    width: 100px; height: 70px;
+    background-color: yellow;
+    border-radius: 10px; /* 둥근모서리 */
+    /* 컨텐츠/내용물 가로/세로 가운데 정렬 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* 포지션 */
+    position: absolute;
+}
+
+/* 하위 요소 위치 지정 */
+.box1{ left: 300px; top:50px;}
+.box2{ left: 150px; top:120px}
+.box3{ left: 450px; top:120px}
+.box4{ left: 150px; top:260px}
+.box5{ left: 450px; top:260px}
+.box6{ left: 300px; top: 330px;}
+
+
+/* 기본적으로 개념이 아직 잘 정리가 되어있지 않았다.
+ 했던거를 그대로 어떤 방식으로 가는지 제대로 정리해야한다. */
