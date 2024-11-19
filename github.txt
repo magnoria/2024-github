@@ -12,6 +12,8 @@
         2. Commit : 파일을 추가/ 변경 된 내용을 저장소에 저장하는 작업
         3. push : 추가/ 변경된 내용을 원격(깃허브 서버)  저장소에 업로드 작업
 
+    5. 저장소 만드는 사람/계정, 파일 commit/push 이름.이메일 (서명)별로 존재한다.    
+
 [vscode 와 github 연동]
     1.github 로 부터 회원가입
     2. git 설치 "  
@@ -19,3 +21,5 @@
     4. vscode 왼쪽 메뉴에 [소스 제어]탭 클릭
     5. github 게시 -> 로그인 -> 웹페이지 로그인진행 -> 컨티뉴
     6. publish to github public repository 본인아이디/ 프로젝트명(최상위 폴더명)
+    7. vscode
+    8. 
