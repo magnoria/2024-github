@@ -1,0 +1,49 @@
+
+/*하나의 (div)박스모델*/
+.box{
+    border:  1px solid red;
+    /*display: inline; 블럭을 가로로 만들기 위해서*/ 
+    width: 100px;
+}
+
+.flexbox1{
+    border: 1px solid blue;
+    width: 250px;
+    display: flex;
+    /*현재 지정된 선택자의 하위 마크업들을 가로배치 방법*/
+    /* nowrap : 만약에 현재 선택자의 크기보다 하위 요소의 크기가 더크면 
+    자동 하위 요소들을 자동으로 자동 맞춤이 적용된다
+        - 부모 : 250px, 자식 :100px*3 => 300px 해당하는경우
+        - nowrap: 자식들의 요소 크기를 자동맞춤한다. 80px 줄어든다.
+        - wrap : 자식들의 요소 크기를 유지 하면서 자동으로 줄바꿈 한다.*/
+    flex-wrap: nowrap ; /*wrap : 묶음*/
+}
+
+.flexbox2 {
+    border: 1px solid blue; width: 250px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flexbox3 {
+    border: 1px solid blue; width: 250px;
+    display: flex
+    flex-wrap: wrap-reverse;
+}
+
+.flexbox4{
+    border: 1px solid blue; width: 250px;
+    display: flex;
+    flex-direction: row ;
+    /*
+        flex-direction : 하위 요소들의 배치 방향을 정의 하는 속성
+            - row(기본값) :가로배치
+            - column : 세로 방향
+            */
+}
+
+.flexbox5 {
+    border: 1px solid blue; width: 250px;
+    display:flex;
+    flex-direction: column;
+}

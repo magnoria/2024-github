@@ -1,0 +1,12 @@
+* { padding: 0px; margin: px;}
+.pimg { width: 400px;}
+.product{
+    border: 1px solid grey; /*테두리*/
+    width : 400px;
+    margin: 20px;
+}
+.sample { padding-left: 100;}
+.price { font-weight: bold; margin-top: 20px;}
+
+.review {color: orange;
+    font-weight: bold;}

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='/day06/1_webpage2.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <div id="wrap"> <!-- 전체 레이아웃 -->
+        <div id="header">
+            <div>
+                <img src="logo.png">
+            </div>
+            <div>
+                <ul id="topmenu">
+                    <li>  김지영(jykim)님 |</li>
+                    <li><a href="#"> 로그아웃 |</a></li> <!-- 여기 간격 조정을 하고 싶을때 이것저것 넣어보기  -->
+                    <li><a href="#"> 정보수정</a></li>
+                </ul>
+                <ul id="mainmenu">
+                    <li><a href="#">home</a></li>
+                    <li><a href="#">출석부</a></li>
+                    <li><a href="#">작품갤러리</a></li>
+                    <li><a href="#">게시판</a></li>
+                </ul>
+                
+            </div>
+        </div>
+        <div id="mainimg">
+            <img src="main_bg.png"/>
+        </div>
+
+        <div id="main">
+            <div id="sidebar">
+
+                <h3> The 베이킹</h3>
+                <p> 안녕하세요 쿠기와 빵만들기 정보를 공유하고 소통하는 공간입니다.</p>
+                <div> <!-- 플렉스로 해서 크기 조절해도 됨 -->
+                    <input class="searchinput" type="text"/>
+                    <input class="searchbtn"   type="button" value="검색"/>
+                </div>
+
+                <h4> 베이킹 요리</h4>
+                <ul>
+                    <li>쿠키 만들기</li>
+                    <li>빵만들기</li>
+                    <li>마카롱 만들기</li>
+                </ul>
+
+                <h4>최근 댓글 </h4>
+                <ul>
+                    <li>쿠키 재미있어요.</li>
+                    <li>빵 좋아요</li>
+                    <li>마카롱 만들기 추천</li>
+                </ul>
+
+            </div>
+            <div id="content"> <!-- content start -->
+
+                <div id="leftcont">
+                    
+                    <h3>알림</h3>
+                    <ul> <!-- 게시판  start-->
+                        <li> <!-- 게시물 1개 -->
+                             <div>쿠키 클래스 연기 합니다.</div>
+                             <div> 09.30</div>
+                        </li>
+
+                        <li>
+                            <div>쿠키 클래스 연기 합니다.</div>
+                            <div> 09.30</div>
+    
+                        </li>
+
+                        <li>
+                            <div>쿠키 클래스 연기 합니다.</div>
+                            <div> 09.30</div>
+    
+                        </li>
+
+                        <li>
+                            <div>쿠키 클래스 연기 합니다.</div>
+                            <div> 09.30</div>
+    
+                        </li>
+
+                        <li>
+                            <div>쿠키 클래스 연기 합니다.</div>
+                            <div> 09.30</div>
+    
+                        </li>
+                    </ul> <!-- ul 게시판 end -->
+
+                    <h3>알림</h3>  <!-- table도 가능 -->
+                    <ul> <!-- 게시판  start-->
+                        <li> <!-- 게시물 1개 -->
+                             <div>쿠키 클래스 연기 합니다.</div>
+                             <div> 09.30</div>
+                        </li>
+
+                        <li>
+                            <div>쿠키 클래스 연기 합니다.</div>
+                            <div> 09.30</div>
+    
+                        </li>
+
+                        <li>
+                            <div>쿠키 클래스 연기 합니다.</div>
+                            <div> 09.30</div>
+    
+                        </li>
+
+                        <li>
+                            <div>쿠키 클래스 연기 합니다.</div>
+                            <div> 09.30</div>
+    
+                        </li>
+
+                        <li>
+                            <div>쿠키 클래스 연기 합니다.</div>
+                            <div> 09.30</div>
+    
+                        </li>
+                    </ul> <!-- ul 게시판 end -->
+                </div> <!-- leftcont end -->
+
+                <div id="rightcont"> <!-- rightcont start -->
+                    <h3> 제빵 클래스</h3>
+
+                    <div id="productlist">
+                        <!-- 제품 1개  -->
+                         <ul>
+                            <li><img src="bread1.png"></li>
+                            <li> 도너츠 만들기 [3]</li>
+                            <li> 24.11.18</li>
+                         </ul>
+                        <!-- 제품 1개 마무리 -->
+
+                        <!-- 제품 1개  -->
+                        <ul>
+                            <li><img src="bread1.png"></li>
+                            <li> 도너츠 만들기 [3]</li>
+                            <li> 24.11.18</li>
+                         </ul>
+                        <!-- 제품 1개 마무리 -->
+
+                        <!-- 제품 1개  -->
+                        <ul>
+                            <li><img src="bread1.png"></li>
+                            <li> 도너츠 만들기 [3]</li>
+                            <li> 24.11.18</li>
+                         </ul>
+                        <!-- 제품 1개 마무리 -->
+
+                        <!-- 제품 1개  -->
+                        <ul>
+                            <li><img src="bread1.png"></li>
+                            <li> 도너츠 만들기 [3]</li>
+                            <li> 24.11.18</li>
+                         </ul>
+                        <!-- 제품 1개 마무리 -->
+
+                    </div>
+                </div>  <!-- right end -->
+
+            </div> <!-- div :content end -->
+
+        </div> <!-- div :main end -->
+
+
+        <div id="footer">  <!--  div : footer start -->
+            <div id="tfcont">
+                <ul id="tftop"><!-- 상단메뉴구역 -->
+
+                    <li> the베이킹 소개</li>
+                    <li> 개인정보처리방침</li>
+                    <li> 저작권 소개</li>
+                    <li> 이용안내</li>
+
+                </ul>
+
+                <div id="tfbottom"> <!-- 하단메뉴구역 -->
+
+                    <ul>   <!-- 1 -->
+                        <li> <h3> 문의전화</h3></li>
+                        <li> 123-1234</li>
+                        <li> 10:00 ~ 18:00(launch 12:00 ~ 13:00)</li>
+                    </ul>
+
+                    <ul><!-- 2 -->
+                        <li> <h3> the 배이킹</h3></li>
+                        <li> 주소 : 인천광역시 부평구 부평역 123-1234</li>
+                        <li> 전화 : 031- 123-1234</li>
+                        <li> 이메일 : sajhefuh@aejd.com</li>
+                    </ul>
+
+                    <ul><!-- 3 -->
+                        <li> <h3>  입금정보 </h3></li>
+                        <li> 농협 123-1234 </li>
+                        <li> the 베이킹 </li>
+                    </ul>
+
+                </div> <!-- 하단 메뉴 끝 -->
+
+            </div>
+        </div> <!-- footer end -->
+
+
+    </div><!-- div : wrap end -->
+    
+</body>
+</html>

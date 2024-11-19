@@ -1,0 +1,47 @@
+/*  * 전체 선택자 :  */
+
+*{
+    border: 1px solid red;
+    margin: 0px;    /*기본 여백 제거*/
+    padding: 0px; /*기본 여백 제거*/
+    /* 박스 사이징 : 모델 크기의 기준 설정
+        1. content-box(기본값) : 테두리 전(컨텐츠/ 내용물) 기준으로 width /height사이즈 
+        2. border-box : 테두리 까지 (컨텐츠/ 내용물 +안쪽여백 + 테두리) 기준으로 width/height사이즈*/
+        
+    box-sizing: border-box;
+}
+/* 보더는 박스를 잡기위해서 만드는것, 작업이 끝날때 삭제  body때문에 여백이 생김
+웬만하면 border- box로 잡을것*/
+
+#wrap {
+    width: 1280px; /* 페이지 전체 사이즈 : pc기준 1100~1300px 사용 */
+    margin: 0 auto; /* 박스모델 가운데 정렬 , 레이아웃잡을때는 세로사이즈는 조정하지 않는다
+    왜냐하면 스크롤 바가 있어서 자동으로 조정되기 때문이다.*/
+   
+}
+#header{
+    height:  200px; /*확인용*/
+}
+
+#main { height:  500px;
+    display: flex;
+    flex-wrap:  nowrap ;
+    /*  기본값 : 만일 자식요소가 더크면 크기 자동맞춤 */
+    flex-direction: row;
+    /* 기본값 : 자식요소들 가로 방향 배치 */
+    justify-content: space-between;
+    /* 양끝에 여백없이 사이 균등 정렬 */
+    align-items: flex-start;
+    /* 기본값 */
+
+}
+#content {
+    width: 830px;
+}
+
+#aside{
+    width: 420px;
+}
+#footer{ height : 100px;
+
+}

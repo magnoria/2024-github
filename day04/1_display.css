@@ -1,0 +1,30 @@
+*{
+    border: 2px solid red; 
+    /*사이즈 위치를 확인하기위한것 구역구분 확인용 나중에 지움*/
+}
+
+.s1 {
+    display:  inline; /*spen 기본값*/
+
+    /* 구역 사이즈(불가능) : inline 사이즈를 적용할수 없다. */
+    width: 200px; height: 200px;
+    margin: 20px 30px; /*바깥여백 : 위/아래 20, 왼/오 30*/
+    padding: 20px 30px; /*안쪽여백 위/아래, 왼/오 30*/
+}
+
+.s2 {
+    display: block;
+    width: 100px; height: 100px;
+    margin: 20px 30px;
+    padding: 20px 30px;
+}
+
+.s3 {
+    display: inline-block; /**/
+    width: 100px; height: 100px;
+    margin: 20px 30px;
+    padding: 20px 30px;
+}
+.s4 {
+    display: none;
+}

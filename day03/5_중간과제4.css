@@ -1,0 +1,27 @@
+
+*{font-family: '맑은고딕';
+    font-size:  15px;}
+
+/*1. 이미지 사이즈*/
+.top > img { width :400px}
+/*3. 구역간 바깥여백 */
+.bottom{ margin: 10px 0px;}
+/*4. 제목 구역*/
+.bottom > .title { 
+font-weight: bold;}/*다른 구역의 'title' 과 구분하기 위해서*/
+
+/*내용구역*/
+.content{ 
+    background-color: #0f6878;
+    color: white;
+    padding: 15px 20px;
+    line-height: 2;
+
+}
+.point1 {
+    color: orange;
+}
+.point1 {
+    font-size: 25px;
+}
+

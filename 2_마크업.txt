@@ -1,0 +1,101 @@
+[마크업] 
+    - html언어 만든 회사에서 미리 정의한 규칙 - 문법
+    - <시작 마크업> 내용물 </끝마크업>
+        - 예외마크업 : <br/> <hr>
+    -속성 : 마크업이 가질수 있는 고유한 성질/특성
+    <마크업 속성명= "속성값"> 정해진 속성만 가능
+    -리액트는 직접 마크업 만들기, 직접 속성 만들기 가능 -->그렇기에 회사에서 많이씀
+
+[경로]
+ 종류1. 로컬=현재PC 경로 , C: 
+C:\Users\tj-bu-702-03\Desktop\2024 github\1_html이란.txt
+ 종류2. 서버 경로
+ 
+
+
+    [마크업 종류] 81p ~ 84p
+     1. 제목 마크업
+        -<h1>~~~<h6>, 글자크기, 굵게, 구역, 의미
+     2. 문단 마크업
+        - <p> ~ </p> , parenassus(문단뜻), 구역 , 의미
+     3. 줄바꿈 마크업
+        - <br/> , line vreak , 줄바꿈
+     4.  구분선 마크업
+        -<hr/> horizontal rule , 가로선
+
+
+     5. **목록 마크업 (많이쓰임 중요!!) , 88p~90p
+        - <ul> , unorder list , 순서없는 목록 
+        - <ol> , oreder list , 순서(순차)가있는 목록
+        - <li> , list item, 목록의 내용물, 항목
+
+     6. *링크 마크업, 117p~ 120p
+        - <a gref=""> </a> , anchor
+        - gref속성 : a 마크업 내용 클릭시 이용할 경로
+         파일 경로1: 파일명. 확장자
+         URL 경로2 : https"//www.naver.com/ 
+         전화번호 경로3 : tel: 000- 000-0000, 전화기능이 있는 디바이스 만 가능
+         식별자 경로4 : #id명
+         -target속성 : 하이퍼링크를 실행하는 방법
+            1. _blank : 새창으로 열기
+    7. 이미지 마크업,
+        - <img src="">
+        - src속성 : 이미지 경로
+           1. 로컬vs서버 2.절대vs상대
+    8. 오디오/비디오 마크업
+        -<audio> </audio>
+        - <video> </video>
+                - controls: 제어버튼 활성화
+                - autoplay : 자동 실행, 정책상 불가능
+                - muted : 음소거 , autoplay muted 조합해서 사용하기도 함
+
+    9. 입력 폼
+        1. <input>
+            1. type 속성의 종륲
+                1.type="text"   : 문자입력 , 기본
+                2.type="password" " 가져온 문자 입력
+                3.type="file" :첨부파일 입력
+                4.type="radio" :단일선택 (name속성 값이 동일)
+                5. type="checkbox" 복수선택
+                6.type= "email" : @포함 문자입력
+                7.type="colar" :색상 입력
+                8.type="date" :날짜 입력
+
+            2. name 속성 , 이름
+                - 각 마크업들의 식별 가능한 이름을 정의하는곳
+                - 중복 가능한 식별 이름
+
+            3. value 속성 : 입력상자에 입력된 데이터 , value"유재석"
+            4. readonly 속성 " 읽기모드, 수정불가능 모드
+            5.disabled 속성 : 비활성화모드, 클릭/ 수정불가능 모드
+            6.placeholder 속성 : 입력상자의 가이드라인 텍스트
+            7.maxlenghth 속성 : 입력상자의 최대 문자수
+            8.outofocus 속성 : 지정한 입력상자의 포커스 설정
+        2. <textarea> , 긴글 텍스트 상자
+            - rows = "가로문자수" 속성 , cols="세로문자수"속성 ,     
+        
+        3. <select> ,  목록상자
+            - 구성 : <select> 마크업 안에 <option>항목 마크업 사용한다.
+            <select>
+            <option>  항목1 </option>
+            <option>  항목2 </option>
+            <option>  항목3 </option>
+            </select>
+        
+        4. <label> , 입력상자의 연관된 텍스트 , 이름표 (label을 설정해두면 이름표만 클릭해도 체크가 됨
+        다른거랑 같이 연결해서 사용해도 될듯)
+        5. <fileset> , 폼안에서 여러 입력상자들을 묶을때 사용
+            - <legend> , 묶음(그룹)의 제목/이름 설정 (전혀 기억이 안났음)
+
+
+        6. <table> , 표 만드는 마크업, 일정한 간격으로 데이터 배치
+            -<tr></tr> : 행 추가 마크업
+            -<th></th> : 제목 셀(칸) 추가 마크업, 굵게
+            -<td></td> : 데이터 셀(칸)추가 마크업
+            -속성
+                1. rowspan="행병합수"
+                2/ colspan="열병합수"
+                3. border= "테이블테두리", <table border="1"></table>
+                    - CSS 이용한 테두리 병합 : style 
+
+        

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    
+    <h1> 입력 폼, 입력관련 마크업들</h1>
+
+    <form> <!--여러입력 마크업들을 묶어주는 역할, 추후에 백엔드(자바)와 통신-->
+
+        텍스트 :<input type="text" value="유재석" disabled/>  <br><!--단독으로 닫는거 가능함 이거 필수로 할것, 찾아보기-->
+        비밀번호 :<input type="password" placeholder="비밀번호" maxlength="5" autofocus />   <!--br로 다 나눌수 있음<br/>-->
+
+        이메일 : <input type="email" value="we@fdad" readonly />
+        첨부파일 : <input type="file" /> <br/> <!--파일을 올릴수 있음, 파일을 여러개 올릴수 있는 multiple 여러개 올리는게 있으나 잘 쓰이지 않음-->
+        
+
+        색상 : <input type="color" /> 
+        날짜: <input type="date" /> 
+        날짜/시간 : <input type="datetime-local" /> 
+        시간 <input type="time" /> 
+        월 :<input type="month" /> 
+        주 :<input type="week" /> 
+        범위스크롤 :<input type="range" />
+        숫자 : <input type="number" />
+        <input type="submit" /> <!--폼 전송, 추후에 백엔드 에게 통신 전송-->
+
+        <input type="radio" name="동의여부1" /> 예 <input type="radio" name="동의여부2" /> 아니요 <!--이건 복수 불가 복수로 사용시  name을 같은 걸로 바꿔야함-->
+
+        <input type="checkbox" name="가입경로" /> 뉴스 <input type="checkbox" name="가입경로"/> 검색
+
+        <input type="reset" /><!--현재 폼안에 입력된 값 초기화-->
+        <input type="button" /> <!--일반 버튼, 효과는 없으나 추후에 자바스크립트 이벤트(함수) 연동-->
+        <br/>
+
+        <textarea rows="5" cols="10"> 긴글 텍스트 상자 </textarea> 
+
+
+        <select>  
+            <option> 네이버 </option>
+            <option> 카카오 </option>
+            <option> 야후 </option>
+            
+        </select>
+        
+    </form>
+
+    <form>
+        <fieldset> <!--form 안에 fiedlset 묶어주는것(구역)-->
+            <legend> 사용자 아이디 </legend>
+            <label>아이디 : </label> <!--주로 form 안에 label을 쓰고 글을 쓴다-->
+        </fieldset>    
+            <input type="text">
+    </form>
+
+</body>
+</html>

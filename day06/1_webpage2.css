@@ -1,0 +1,156 @@
+/* * {border: 1px solid red;} */  /* 테두리 */
+
+*{ padding: 0px; margin: 0;} /* 기본 여백 제거 */
+
+a{ text-decoration: none; color: black;} /* a마크업 밑줄제거, 색상변경 */
+li{ list-style-type: none;} /* li 마크업은 글머리 제거 */
+
+/* 제일많은게 1280px */
+/* 헤더 */
+#header {
+    width: 1280px;/* 구역 가로 사이즈 */
+    margin: 0 auto;/*  가운데 정렬 */
+
+    /* height: 300px; 확인용 */
+    display: flex; /* 하위 요소들의 배치 방법 */
+    flex-direction: row; /* 배치방향 :row(기본값 생략가능) */
+    justify-content: space-between; /* 양쪽끝에 균등 정렬 */
+    align-items: center; /* 세로정렬 */
+}
+/* div li spen인지 home 메뉴를 알 수가 없음 그러므로 어떤걸 넣어도 상관없다 */
+
+#topmenu{
+    display: flex;
+    justify-content: flex-end;
+   
+}
+
+/* #wrap > #header > #topmenu >li {
+    나중에 border? margin? list 가로배치시 줄간격 조정 찾아보기 
+    line!!! line-height !!!; 
+    
+}
+ */ 
+
+#mainmenu{
+    display: flex;
+    justify-content: flex-end;
+}
+/* 여러개 선택자 선택하기(쉼표사용): 선택자1, 선택자2  */
+/* 하위 선택자 선택하기 : 선택자1 > 하위선택자 */
+/* #topmenu > li,*/ #mainmenu > li {    font-size:  20px; /* 글꼴 크기 */
+    font-weight: bold;
+    margin-left: 100px;  /* 왼쪽 바깥 여백 */
+    margin-top: 15px;/* 왼쪽 바깥 여백 */
+}
+#mainimg {
+    text-align: center;    /* display: flex로 해도 됨 */
+    /* 하위 요소들의 컨텐츠(내용물)들을 가로 가운데 정렬 */
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+/* 본문 */
+#main{ width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;}
+
+/* 사이드바 */
+#sidebar{    width: 250px;}
+#sidebar > h3{    background-color: #0ca9a2; /* 배경색상 */
+    color: white; font-size: 20px; padding: 10px;
+}
+#sidebar > p{
+    line-height: 160%;/* 줄간격 : 기본값이 150% */
+    padding: 5px;
+}
+#sidebar > div > .searchinput{
+    width: 100px; /* 입력상자 가로 사이즈 */
+    height: 30px; /* 입력상자 세로 사이즈 */
+    border-radius: 10px; /* 둥근모서리 */
+    padding: 1px 6px /* 입력상자에 padding도 가능 입력상자 안쪽 여백 */
+}
+#siderbar > div > .searchbtn{
+    /* 버튼 사이즈를 늘리는 방법 : 1. width 크기로 잡아도 됨 2. padding */
+    padding: 5px 10px;
+}
+#sidebar > h4{
+    border-top: solid 2px black; /* 위쪽 테두리 */
+    border-bottom: solid 1px #eeeeee; /* 아래쪽 테두리 */
+    padding: 10px;
+    margin-top: 10px; /* 테두리 기준으로 위쪽 바깥여백 */
+    font-size: 18px;
+}
+#sidebar > ul > li{ padding: 5px 10px;} /* 안쪽 여백 */
+
+/* 본문 */
+#content{    
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;}
+
+
+    /* 왼쪽 본문 */
+
+#content > #leftcont { /* 오타있었음 */
+    width: 490px;
+}
+#content /* > #leftcont > 다 적용하기 위해 나중에 뺌 */  h3 {   /* 여기 오타 */
+        /* 위처럼 쓰면 자손까지 다됨 > 하위하나만 */
+    border-bottom: solid 2px black;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+#content >#leftcont > ul > li{
+    display:  flex;
+    justify-content: space-between;
+    padding: 7px 0px;
+}
+#content > #leftcont > ul{ margin-bottom: 50px;}
+
+/* 오른쪽 본문 */
+
+#content > #rightcont{
+    width: 490px;  /* px를 안썼음 오타가 자꾸 생김 잘 쓸것 */
+}
+ 
+/*  제품 목록 구역 */
+#productlist{
+    display: flex;
+    flex-wrap: wrap; /* nowrap은 오른쪽으로 나열된다 */
+    /*  felx-wrap : 만약에 부모요소 보다 하위 요소들의 사이즈가 더 크면 */
+    /*  nowrap (기본값):하위요소 부모보다 크기 작게 기본 조정 / ㅈㄱ메*/
+}
+/* 제품 구역 */
+#productlist > ul {
+    width: 240px; margin-bottom: 30px;
+}
+/* 푸터 */
+
+#footer{
+    background-color: #05344e ; color: white;
+
+}
+#footer >#tfcont{
+    width: 1280px;
+    margin: 0 auto;
+    padding: 15px 0px; /* 여백은 10부터 넣으면서 해보자 */
+}
+
+#footer > #tfcont > #tftop {
+    display: flex;
+}
+#footer > #tfcont> #tftop > li {margin-right: 40px;}
+
+#footer > #tfcont > #tfbottom {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0px;
+}
+
+#footer > #tfcont > #tfbotoom > ul >li > h3 {   /* class로 한번에 줘도 됨 */
+    margin-bottom: 5px;
+}
+#footer > #tfcont >#tfbottom > ul > li {
+    margin: 5px 0px;
+}

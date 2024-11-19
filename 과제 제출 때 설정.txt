@@ -1,0 +1,13 @@
+제출 :카카오톡방에 본인 링크로 제출
+ex)http://192.168.30.222:5500/day02/5_%EC%A4%91%EA%B0%84%EA%B3%BC%EC%A0%9C.html
+-제출방법 설정
+ - 1. 왼쪽 사이드바 하단에 톱니바퀴 아이콘 클릭
+ - 2. 설정 클릭
+ - 3. 검색 : 'live server'
+ - 4. live server config탭 에서
+    1.  Custom Browser : chrome
+    2.  Live Server > Settings : Full Reload : 체크 (true)
+    3.  Live server > Server > Settings : Use Local Ip : 체크(true) , -> 192~
+- 수정된 코드 자동 저장
+   1. 상단 메뉴 -> 파일 -> 자동 저장 체크
+   

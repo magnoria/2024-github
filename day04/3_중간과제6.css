@@ -1,0 +1,46 @@
+*{
+    /*모든 여백 제거*/
+}
+
+
+
+/*1. 배경색 넣기 */
+body {
+    background-color: pink;
+    text-align: center;/*가운데 센터*/
+}
+
+.info > .title {
+    font-size: 20px;
+    border: 3px solid white;
+    width: 300px;
+    border-radius: 50px; /*모서리 둥글게*/
+    padding: 10px;
+    font-weight: bold;
+    margin: 30px auto;/*구역 가로 가운데 배치*/
+
+}
+.logo > img{
+    width: 200px; height: 200px; /*정사각형*/
+    border-radius: 100px; /**/
+}
+
+.info > .content{ margin: 20px;}
+
+/*링크구역*/
+
+.info > .linkbox > .link{
+    background-color: skyblue;
+    width: 300px;
+    margin: 15px auto; /*위/아래 , 10 양옆 오토*/
+    padding: 20px;
+    border-radius: 10px;
+
+}
+.info > .linkbox > .link > a{
+    /*a마크업의 기본 css*/
+    font-weight: bold;
+    color: white;
+    text-decoration: none; /*a태그는 밑줄이 기본값으로 들어가기 때문에 밑줄을 없앤것
+    a태그 기본값을 없애는 코드가 있음*/
+}
