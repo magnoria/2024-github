@@ -1,0 +1,163 @@
+/* ============== 공통 CSS ===================== */
+*{ 
+  padding: 0px; margin: 0px; 
+  font-size: 12px; box-sizing: border-box;
+}
+li{ list-style-type: none; }
+a{ color: black; text-decoration: none; }
+/* ============== 레이아웃 CSS ===================== */
+#header{ width: 100%; }
+#content{ width: 1600px; margin: 0 auto; }
+#footer{ width: 100%; }
+/* ============== 작업용 CSS ===================== */
+
+/* ============== 1.상단메뉴 ===================== */
+#topMenu{
+  display: flex; justify-content: flex-end; /* 하위 요소 배치방법*/
+  border-bottom: 1px solid #dbdbdb; /* 아래 테두리 */
+  padding: 10px; 
+}
+#topMenu > li > span {  padding: 0px 15px;}
+#topMenu > li img { width: 20px; margin: 2px 20px 0px 0px; }
+
+/* ============== 2.본메뉴 ===================== */
+#mainMenu{
+  display: flex; justify-content: space-between; align-items: center; 
+  padding: 0px 40px;
+}
+#mainMenu > ul{  display: flex;  width: 80%; }
+#mainMenu > ul > li{
+    height: 80px; width: 80px;
+    display: flex; align-items: center; justify-content: center;
+}
+#searchbox{ border-bottom: 1px solid black;}
+#searchbox > input{ border: none; padding: 5px; width: 130px; }
+#searchbox > img{ width: 15px;}
+*:focus{ outline: none; } /* 커서(포커스) 활성화 되었을때 테두리/outline 제거 */
+#mainMenu .new{ color: red; }
+#mainMenu .logo{ width: 155px; }
+
+/* ================ 2-2 드롭메뉴 ================= */
+#mainMenu > ul > li{ position: relative; }
+#mainMenu .subMenu{ 
+  position: absolute; top: 80px;
+  background-color: white;
+  width: 130%;        /* 부모( 본메뉴 li )에 사이즈보다 1.3배 */ 
+  text-align: center;
+  display: none; /* 서브 메뉴 숨기기 */
+}
+#mainMenu .subMenu > li{ margin:10px;}
+/* 본메뉴(li)에 hover(마우스를 올렸을때) 했을때 subMenu 보이도록 */
+#mainMenu > ul > li:hover .subMenu{ display: block;}
+
+/* ============== 2-3. 본메뉴 sticky  ===================== */
+#mainMenu{
+  position: sticky; /* 스크롤 내릴경우 위치 고정 */
+  top : 0px; /* 최상단 */
+  /*
+    sticky 사용조건 
+      1. sticky : 상위 부모의 높이 사이즈 안에서 고정 
+        vs fixed : 특정 요소와 상관없이 디바이스 고정 
+      2. top , right , left , bottom 위치 속성 1개이상 필수!
+      3. 부모요소가 overflow 속성 사용금지.
+  */
+
+  background-color: white;
+  /* 투명도  : 100%투명도없음 */
+  opacity: 80%; 
+}
+
+/* ============== 3.메인 이미지  ===================== */
+#mainImg{ width: 100%; }
+
+/* ============== 4. 본문  ===================== */
+#content > .title{
+  margin-top: 50px;font-size: 17px; 
+  text-align: center; font-weight: bold;
+}
+#content > .comment{
+  font-size: 10px; text-align: center;
+  color: #999999; margin: 20px 0px;
+}
+/* items(1600) 한줄에 4개씩 이므로 나누기 4 하고 여백 조금 빼기 */
+#items > .item{ width: 380px; margin: 30px 0px; }
+#items > .item > .itemImg{ width: 100%; }
+#items .color > span{
+  width: 10px; height: 10px;
+  display: inline-block; /* 한줄 배치 하면서 사이즈 적용 가능 */
+  border: 1px solid #DBDBDB;
+}
+#items .colorReview{ 
+  display: flex; justify-content: space-between;
+  margin: 5px 0px;
+}
+#items .review{ color: #999999;}
+
+#items .itemName{ margin: 5px 0px; }
+#items .itemName > .size{ 
+  font-size: 10px; color: #999999; margin: 1px 0px;
+}
+#items .itemPrice{ position: relative; margin: 5px 0px; }
+#items .disc{ 
+  position: absolute; right: 0px; top: 0px; /* 오른쪽 상단 배치 */
+  font-size: 15px; color: red; font-weight: bold;
+}
+#items .price{ 
+  text-decoration: line-through;  /* 취소선 */
+  color: #999999; 
+} 
+#items{
+  display: flex;
+  flex-wrap: wrap; /* 줄바꿈 처리 */
+  justify-content: space-between;
+}
+/* ============== 5. 푸터  ===================== */
+#footer{ margin-top: 100px; }
+
+#footerBottom{    /* 푸터 하단 */
+  text-align: center;
+  font-size: 10px; color: #999999;
+  margin: 30px 0px; line-height: 160%;
+}
+
+#footerTop{     /* 푸터 상단 */
+  background-color: #f7f7f7;
+}
+
+#footerContent{ /*푸터 상단 내용 구역 */
+  width: 1400px; margin: 0 auto;
+  display: flex; justify-content: space-between;
+  padding: 50px 100px;
+}
+#footerContent h3{ margin: 10px 0px; font-size: 16px; font-weight: bold;}
+#footerContent h4{ margin: 10px 0px; font-size: 18px; font-weight: bold;}
+#footerContent ul > li{ margin-bottom: 10px;}
+
+/* ============== 6. 팝업  ===================== */
+#popup{
+  position: fixed;      /* 디바이스 고정위치 */
+  right: 0px; top: 30%; /* 오른쪽 가운데 */
+}
+#popup img{ width: 20px;} 
+
+#popup > ul > li{
+  padding: 10px;
+  border: 1px solid #dbdbdb;
+  background-color: #f7f7f7;
+  position: relative;
+}
+#popup > ul > li > span{
+  position: absolute;  top: 10px; right: 40px;
+  display: none;
+
+  width: 80px; height: 20px;
+  background-color: black; color: white;
+  border-radius: 5px; text-align: center;
+}
+#popup > ul > li:hover .popupSub{
+  display: inline;
+}
+
+
+
+
