@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <link rel='stylesheet' type='text/css' media='screen' href='4_webpage practice.css'>
+
+</head>
+
+<body>
+    <div id="wrap"> <!-- 나같은경우 여러 div 를 잡아서 flex나 다른거 적용이 엉키는 경우가 있음 -->
+        <ul id="topMenu"> <!-- list로 깔끔하게 묶음 -->
+            <li> <a href="#">LOGIN</a> <span> | </span></li> <!-- span....문장 블럭으로 묶어버림.. -->
+            <li> <a href="#">JOIN</a> <span> | </span></li>
+            <li> <a href="#">MYPAGE</a> <span> | </span></li>
+            <li> <a href="#">ORDER</a> <span> | </span></li>
+            <li> <a href="#">CART(0)</a> <span> | </span></li>
+            <li> <a href="#">COMMUNITY</a> <span> | </span></li>
+            <li> <a href="#"><img src="../day07/img/search_icon.png" /> </a> </li>
+        </ul><!-- list end -->
+
+
+
+
+
+        <ul id="mainMenu"> <!-- ul로 본메뉴를 묶어버림 -->
+
+                <!-- 로고구역 -->
+            
+            <div><a href="#"><img class="logo" src="../day07/img/logo.png" /> </a></div>
+             <!-- 중간메뉴 -->
+
+
+            <ul> <!-- 메뉴구역도 ul로 묶어버림 ul... -->
+
+                <li> <a href="#">BEST</a></li>
+
+                <li> <a href="#"><span class="new">NEW~20%</span></a></li> <!-- 스펜으로 묶은 이유는? -->
+                
+                <li><!-- list 안에 list -->
+                    <a href="#">MADE</a>
+                    <ul class="subMenu">
+                        <li> <a href="#">티</a></li>
+                        <li> <a href="#">셔츠</a></li>
+                        <li> <a href="#">바지</a></li>
+                        <li> <a href="#">아우터</a></li>
+
+                    </ul><!-- into list end -->
+
+                </li><!-- list end -->
+
+
+                <li> <!-- list로 묶음 -->
+                    <a href="#">BIG SIZE</a>
+                    <ul class="subMenu">
+                        <li> <a href="#">티2</a></li>
+                        <li> <a href="#">셔츠2</a></li>
+                        <li> <a href="#">바지2</a></li>
+                        <li> <a href="#">아우터2</a></li>
+                    </ul> <!-- 주석을 너무 많이 만들지는 말자 대충 구역을 확인할수 있겠금 만드는게 깔끔할듯 -->
+                </li>
+
+                <li> <a href="#">TOP</a></li>
+                <li> <a href="#">SHIRTS</a></li>
+                <li> <a href="#">PANTS</a></li>
+                <li> <a href="#">OUTER</a></li>
+                <li> <a href="#">SHOES&BAG</a></li>
+                <li> <a href="#">ACC</a></li>
+                <li> <a href="#">당일배송</a></li>
+                <li> <a href="#">SALE</a></li>
+                <li> <a href="#">1+1</a></li>
+
+            </ul><!-- manu 구역 end -->
+
+
+            <!-- 검색구역 -->       <!-- 주석 잘보기 css엉키는 이유가 주석 및 오타 -->
+             <div id="searchbox">
+                <input/> <!-- 입력창을 나중에는 기능 구현을 해야하지만 이렇게도 만들 수 있는듯 -->
+                <img src="../day07/img/search_icon.png" />
+             </div>
+
+        </ul> <!-- mainMenu end -->
+
+
+        <img id="mainImg" src="../day07/img/main_img.jpg"/>
+
+        <div id="content"> 
+            
+            <h3 class="title">HOT ITEM</h3>
+            <div class="comment">조군이 추천하는 핫 아이템입니다</div>
+
+            <div id="items"><!-- 제품목록 -->
+
+                <div class="item"> <!-- 제품 1개 -->
+
+                    <img class="itemImg" src="../day07/img/goods/goods1.gif"/> <!-- gif도 됨 !! -->
+
+                    <div class="itemInfo">  <!-- 제품정보 -->
+
+                        <div class="colorReview">    <!-- 2. 제품 칼라/리뷰 -->
+                            <span class="color">
+                                <span style="background-color: black;"></span> <!-- span으로 잡은이유는 무엇일까? 구별을 위해서? 다만들고 확인후 div로 바꿔볼것 -->
+                                <span style="background-color: white;"></span>
+                            </span>
+
+                            <!-- <span --><span class="review">
+                                (리뷰 : 379)
+                           <!--  </span> --></span>
+
+                        </div>
+
+                        <div class="itemName">              <!-- 2. 제품 이름 옵션 -->
+                            <div class="name">[1+1]핏좋은 프레쉬 탄탄 반팔티</div>
+                            <div class="size">M~2XL(95~115)</div>
+                            <div class="option">[SEMI-OVER FIT]</div>
+                        </div>
+
+                        <div class="itemProce">
+                            <div class="price"> 42,000원</div>
+                            <div class="discPrice"> 36,900</div>
+                            <div class="disc"> 12%</div>
+                        </div>
+
+
+                    </div>
+                     
+                </div>
+            </div>
+
+        </div> <!-- content end -->
+
+        <div id="footer">
+
+        </div><!-- footer end -->
+    </div>
+</body>
+
+</html>
