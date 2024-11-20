@@ -19,8 +19,11 @@
   
   /* 수동 드라이버 검색 */
   .search {
-    
-    flex: 1;
+
+    /* display: flex; */
+    /* justify-content: center; */
+    width: 750px;
+    border-top: 10px;
     background: #fff;
     padding: 20px;
     border-radius: 8px;
@@ -56,6 +59,7 @@
   
   /* 뉴스 및 추천 */
   .news1 {
+    
     flex: 2;
   }
   .news1 h2 {
@@ -88,7 +92,8 @@
   
   /* Linux 드라이버 */
   .licont1 {
-    display: flex;
+    /* display: flex; */
+    width: 750px;
   
     margin-top: 40px;
 
