@@ -5,9 +5,28 @@
 기술 면접/ 테스트
 
 [웹 프로그래밍 언어]
-    -HTML : 하이퍼텍스트 마크업 언어 = 뼈대
-    -css : 캐스케스팅 스타일 시트 언어 = 옷
-    - js : 자바 스크립트 언어   = 이벤트/행동 
+    -HTML(문자) : 하이퍼텍스트 마크업 언어 = 뼈대
+    -css(문자) : 캐스케스팅 스타일 시트 언어 = 옷 HTML 없이 독단적으로 실행 불가능
+    - js(문자,숫자,불리언,객체) : 자바 스크립트 언어   = 이벤트/행동  HTML 없이 독단적으로 실행 불가능
+        HTML(CSS포함, JS 포함)
 
-[JS]
+    [JS]
+        -2009년이후 node.js 나오면서 백엔드 역할 가능해졌다. 인기 상승
+        1. 웹 프로그래밍(html,css,js)
+        2. 웹 서버(node.js vs JAVA)
+        3. 앱 (REACT.JS NATIVE vS JAVA)
+        4. thvmxmdnpdj (NW.JS)
+            ---> 스타트업(소규모 프로젝트)
 
+[ JS 적용하는 방법]
+    1. body 마크업에 script 라는 마크업을 사용
+         <script>
+        console.log('[1]안녕 JS')
+        </script>
+    2 JS파일 생성하여 HTML 에서 임포트(불러오기)사용
+        < head> 마크업 안에서 <script src='JS파일경로'>
+          <script src="1_JS시작.js"></script>
+
+    [JS 주석]
+        1. /**/ 여러줄 주석
+        2. //한줄 주석
