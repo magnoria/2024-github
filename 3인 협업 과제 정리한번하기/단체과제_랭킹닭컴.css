@@ -1,0 +1,11 @@
+*{border : 1px solid green;}
+*{ padding: 0;
+        margin: 0;}
+li{list-style: none;} 
+
+/*  전체 기본 옵션 */
+
+.content {
+        display: flex;
+        
+}
