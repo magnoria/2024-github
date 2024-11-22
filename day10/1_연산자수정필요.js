@@ -276,3 +276,46 @@ let 결과1 = 점수 >= 80 ?'합격' : '불합격';
 console.log(`[6] 결과1 : ${결과1}`)
 let 결과2 = 점수 >= 80 ? '합격' : 점수 >= 60 ? '재시험' : '불합격';
 
+
+
+//[지문9] 1차점수 와 2차점수 prompt함수로 각 입력받아서 총점이 150점 이상이면
+//                      HTML의 <h3>에 ' 합격' 아니면 '불합격'
+//                      HTML의 <h3> 에 표시하시오.
+
+/* let 선점수 = prompt('1차점수 : ')
+let 후점수 = prompt('2차점수 : ')
+
+console log(선점수); 인식이 안됨 왜그런지 확인할것 */
+//(1) 입력/ 저장
+l/* et point1 = Number(prompt('1차점수 :'))
+let point2 = Number(prompt('2차점수 :')) */
+//(2) 연산처리
+/* let totaal = point1 + point2 ;
+let result = total >= 150 ? '합격' : '불합격' */
+//(3) 출력
+
+/* let outHTML = `<h3> 결과 : ${ result} </h3>` */
+
+
+//[지문9] 두사람의 이름을 prompt 함수로 각 입력받아서 
+ // 만일 이름이 '유재석' 이면 뒤에 (방장)이라고 이름 위 붙이고 아니면 생략한다.
+//                      ex) 유재석(방장) , 강호동
+//                      HTML의 <ol> 에 표시하시오.
+
+//(1) 입력/ 저장
+/* 
+    let name1 = prompt ('이름입력')
+    let name2 = rpompt ('이름입력')
+
+ */
+
+let name1 = prompt('이름1 :')
+let name2 = prompt('이름2 :')
+
+// (2) 연산
+// 만약에 name1변수값이 '유재석' 이면 name1 값 뒤에 (방장)붙이고 아니면 그대로 name1변수 값을 수정한다.
+name1 = name1 == '유재석' ? `${name1}(방장)` : name1
+name2 = name2 == '유재석' ? `${name2}(방장)` : name2
+//(3) 출력
+let outHTML = `<ol> <li> ${name1} </li> <li> ${name2} </li></ol>`
+document.write(outHTML)

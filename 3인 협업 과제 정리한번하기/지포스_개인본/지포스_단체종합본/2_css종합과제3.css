@@ -75,14 +75,15 @@ body {
     
 
     /* height ; 안먹힘 */
-    background-color: #f5f5f5;
+    /* background-color: #f5f5f5; */
     padding: 20px;
 
   }
   .main { 
-    width: 1250px;   /*  */
+    width: 1450px;   /*  */
     display: flex;
     justify-content: center;
+    background-color: #f5f5f5;
     /* gap: 20px; */
 /*     border 1000px; 왜인지는 모르겠는데 border가 안먹혀서 간격이 안벌어짐 */
 
@@ -130,7 +131,8 @@ body {
   
   /* 뉴스 및 추천 */
   .news1 {
-    
+     /* display: flex;
+     justify-content: ; */
     /* flex: ;  안거는게 나을듯?*/
   }
   .news1 h2 {
