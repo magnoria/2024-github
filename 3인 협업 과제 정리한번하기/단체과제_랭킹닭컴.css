@@ -7,5 +7,46 @@ li{list-style: none;}
 
 .content {
         display: flex;
+        justify-content: center;
+  
+}
+
+
+
+
+li { font-size: 14px;
+        color: gray;
+
+}
+
+
+
+
+
+.가격머리{
+        background-color: gray;
+}
+
+
+
+
+
+#상품구성{
+       
+}
+
+
+
+.선택 {
+      
+        width: 310px;
+        position: relative;
         
+}
+
+
+.선택 > p {
+        display: flex;
+        justify-content: right;
+        text-align: left ;
 }
