@@ -160,3 +160,26 @@ a{color: black; text-decoration: none;}
 #footerContent h4{margin: 10px 0px; font-size: 18px; font-weight: bold;}
 #footerContent ul > li {margin-bottom: 10px;}
 
+#popup{
+    position: fixed;
+    right: 0px; top: 30%;
+}
+#popup img{width: 20px;}
+
+#popup > ul > li {
+    padding: 10px;
+    border: 1px solid #dbdbdb;
+    background-color: #f7f7f7;
+    position: relative;
+}
+
+#popup > ul >li >span {
+    position: absolute; top: 10px; right: 40px; /* 하아아아아아 복스으으으읍 시간이 없다아아아 */
+    display: none;
+    width: 80px; height: 20px;
+    background-color: black; color: white;
+    border-radius: 5px; text-align: center;
+}
+#popup > ul > li:hover .popupSub {
+    display: inline;  /* 화면에 마우스 올릴시 글 이 뜸 */
+}
