@@ -3,12 +3,13 @@
         선택자 {속성명 : 속성값;}
         어디에 {무엇을 : 어떻게;}
 */
+/* *{border: 1px solid red;}  */  /* 0px 안해놓으면 글자간격 크기만큼 벌어진다  p 문단과 h문단의 간격 차이가 존재한다*/
 
 /*
     웹폰트 vs 일반폰트 (주로 쓰는 체 맑은 고딕)
         - 무료폰트 모음 : https://noonnu.cc/font_page/pick#google_vignette
 */
-@font-face {
+@font-face {    /* 이건 폰트 그대로 복사해서 가지고온것 */
     font-family: 'yg-jalnan'; 
     src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff');
     font-weight: normal;
@@ -20,7 +21,7 @@
     font-family :" 궁서" , "굴림";/*글꼴 : 사용자 pc에 설치된 글꼴 기능*/
     font-size: 100px; /* 글꼴 크기, px(픽셀)*/
     font-style: italic; /*글꼴 기울기*/
-    font-weight: bold; /*글꼴 진하게 , h3 마크업은 기본적으로 진하게 포함*/
+    font-weight: bold; /*글꼴 진하게 , h3 마크업은 기본적으로 진하게 되어서 변화가 없음*/
     
     
 
@@ -28,17 +29,20 @@
 .content{
     font-family:'yg-jalnan' , '맑은고딕' ; /*웹폰트(눈누 vs 구글) : 폰트제공하는 서버로부터 글꼴 사용*/
     color: gold; /*글꼴 색상*/
-    word-spacing : 10px ; /*단어 간격 : 어간*/
-    letter-spacing: 5px; /* 글자 간격 : 자간*/
+    word-spacing : 10px ; /*단어 간격 : 어간*/      /* 글자간격 중요 */
+    letter-spacing: 5px; /* 글자 간격 : 자간*/      
     line-height : 160%; /* 줄간격 , % 단위, 기본값은 150(워드나 한글은 160 ~ 180)*/
 }
 /*css는 폰트에서 ' , " 차이를 안둠*/
 .writer{
     text-align: center; /*텍스트 가로 정렬 , left, right, center */
-    /*텍스트 선긋기 : underline(밑줄) overline line-through 쉼표 안쓰고 연결*/
-    text-decoration: underline overline line-through;
+  
+    text-decoration: underline overline line-through;  /*텍스트 선긋기 : underline(밑줄) overline line-through 쉼표 안쓰고 연결*/
+    
     /*텍스트 그림자 : x축 y축 y축 흐림정도 색상*/
     text-shadow: 1px 1px 3px gray; /*강조할때*/
+
+
     /* 색상 : 1. 색상명 2. RGB색상[0~225사용] 3. 헥스코드[16진수사용]*/
     color : red;
     color: #ff0000; /*여러곳에서 많이쓰여서 권장 */
