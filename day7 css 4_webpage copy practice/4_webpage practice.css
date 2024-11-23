@@ -21,6 +21,8 @@ a{color: black; text-decoration: none;}
 #content{width: 1600px; margin: 0 auto;} /* margin: 0 auto 위아래 왼오 width값을 적용하지 않는다면 auto는 적용되지 않아 가운데 정렬이 되지 않는다 */
 #footer{width: 100%;}
 
+
+
 #topMenu{
     display: flex;
     justify-content: flex-end;
@@ -76,11 +78,13 @@ a{color: black; text-decoration: none;}
       2. top , right , left , bottom 위치 속성 1개이상 필수!
       3. 부모요소가 overflow 속성 사용금지. */
       background-color: white;
-      opacity: 80%; /* 투명도를 거는것 */
+      opacity: 80%; /* 투명도를 거는것 100은 없음*/
 }
     /* 메인이미지 */
 
-#mainImg{width: 100%;} /*  */
+#mainImg{width: 100%;} /* 메인이미지 양쪽간격 */
+
+
 
 /* 본문 */    /* ---> 본문 배치 중요 4칸 만들고 정리해 볼것 */
 #contet > .title {
@@ -115,6 +119,12 @@ a{color: black; text-decoration: none;}
 #items .disc{
     position: absolute; right:  0px; top: 0px;
     font-size: 15px; color: red; font-weight: bold;
+}
+#items{ 
+    display: flex; /* 여기서 왼쪽에서 일자로 있던것들이 12개 남기고 오른쪽으로 옮겨짐 */
+    flex-wrap: wrap; /* 줄바꿈 처리되고 */
+    justify-content: space-between; /* 아이템2개 간격 생기고 나머지 줄이된 템들이 2개 아이템과 간격을 벌림 */
+
 }
 
 
