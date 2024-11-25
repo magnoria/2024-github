@@ -28,7 +28,10 @@ li { font-size: 14px;
 }
 
 
-.상품구성 > .구성 {
+#상품구성 > .구성 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
              
 }
         
