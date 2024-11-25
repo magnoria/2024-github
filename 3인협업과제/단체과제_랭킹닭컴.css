@@ -1,134 +1,191 @@
-*{border : 1px solid green;}
-*{ padding: 0;
-        margin: 0;}
-li{list-style: none;} 
+* {
+      /*   border: 1px solid green; */
+        padding: 2px;
+        margin: 2px;
+    }
 
-/*  전체 기본 옵션 */
+a { color: black; text-decoration: none;
 
-.content {
+}
+
+    li {
+        list-style: none;
+    }
+    
+    /* 전체 기본 옵션 */
+    .content {
         display: flex;
         justify-content: center;
-  
-}
-
-
-.chick { /* 메인 왼쪽 jpg */
-       width: 480px;
-}
-
-.선택 {
-     
+        gap: 20px; /* 좌우 섹션 간 간격 추가 */
+        padding: 20px 0;
+    }
+    
+    .chick {
+        width: 480px;
+        border-radius: 10px; /* 이미지를 둥글게 */
+    }
+    
+    .선택 {
+        text-align: right;
+        margin-top: 20px;
+    }
+    
+    #회원가 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center; /* 수직 중앙 정렬 */
+        width: 600px;
+        margin-top: 20px; /* 간격 추가 */
+        padding: 10px 0;
+    }
+    
+    #회원가 > li {
+        display: flex;
+        gap: 10px; /* 라디오 버튼과 텍스트 간격 */
+        align-items: center;
         
-      text-align: right;
-}
-
-
-#회원가 {    /* 상위 하위 클래스 개념이 지금 제대로 안되있어서 자꾸 적용이 틀리는것 */
-                /* div에 걸어서 flex 및 이것저것이 안걸림 list의 경우 상위는 ul */
-        display: flex;
-       justify-content:space-between; 
-       
-      width: 600px;
-}
-
-#회원가 > li {
-        display: flex;
-}
-
-
-#상자 {
+        border-bottom: 1px solid black;
+    }
+    
+    #상자 {
         display: flex;
         justify-content: center;
-}
-
-#상자 > a {
-        width: 60px;
+        gap: 20px; /* 버튼 간 간격 */
+        margin-top: 20px;
+    }
+    
+    #상자 > a,
+    #상자 > div {
+        width: 120px;
+        padding: 10px;
         text-align: center;
-}
+        border: 1px solid #ddd; /* 경계선 추가 */
+        border-radius: 5px;
+        background-color: #f9f9f9;
+        cursor: pointer;
+    }
+    
+    #상자 > a:hover,
+    #상자 > div:hover {
+        background-color: #e0e0e0;
+    }
+    
 
 
-#상자 > div {
-        width: 224px;
-        text-align: center;
-}
 
-/*-------------------------------------- 후단 */
 
-#후기 {
+
+
+
+    /* 후기 섹션 */
+    #후기 {
         display: flex;
-}
-
-
-#제품{
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        background-color: #fff;
+        border-bottom: 1px solid #ddd;
+    }
+    
+    #후기 div {
+        font-size: 16px;
+        font-weight: bold;
+    }
+    
+    #제품 {
         display: flex;
+        flex-wrap: wrap; /* 리뷰를 여러 줄로 정렬 */
+        justify-content: center;
+        gap: 20px; /* 제품 간 간격 */
         background-color: #f8f8f8;
-}
-
-
-#bestli {    /*  상품리뷰 칸 */
-        
+        padding: 20px;
+        border-top: 1px solid #ddd;
+    }
+    
+    #bestli {
         width: 300px;
-}
-
-
-li { font-size: 14px;
-        
-
-}
-
-.bestpic {
+        padding: 10px;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    
+    li {
+        font-size: 14px;
+    }
+    
+    .bestpic {
         display: flex;
-        justify-content: left;
-        width: 300px;
-        height: 100px;
-}
-
-.bestpicture{
-        display: flex;
-        justify-content: right;
+        justify-content: space-between;
+        align-items: center;
         width: 100px;
         height: 100px;
-}
-
-
-.가격머리{
-        background-color: ;
-}
-
-
-#상품구성 > .구성 {
+        margin-bottom: 10px; /* 이미지 아래 간격 */
+    }
+    
+    .bestpicture {
+        width: 100px;
+        height: 100px;
+        border-radius: 10px;
+        overflow: hidden; /* 이미지 넘침 방지 */
+    }
+    
+    .bestpicture img {
+        width: 100px;
+        height: 100px;
+        object-fit: cover; /* 이미지 비율 유지하며 크기 조정 */
+    }
+    
+    .가격머리 {
+        font-weight: bold;
+        color: #ff5722;
+        margin-top: 20px;
+        background-color: #ccc;
+    }
+    
+    #상품구성 > .구성 {
         display: flex;
         justify-content: center;
         align-items: center;
-             
-}
-        
-     
-
-
-#상품구성{display: flex;
-        justify-content: space-between;
-        
-       
-}
-
-#보관 { 
-        
-        
-        
-}
-
-.선택 {
-      
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+    
+    #상품구성 {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px;
+        background-color: #f9f9f9;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+    }
+    
+    #보관 {
+        margin-top: 20px;
+        font-size: 14px;
+        font-weight: bold;
+    }
+    
+    /* 선택 섹션 */
+    .선택 {
         width: 650px;
         position: relative;
-        
-        
-}
-
-
-.선택 > p {
+        margin-top: 20px;
+    }
+    
+    .선택 > div {
+        margin-bottom: 10px;
         display: flex;
-        justify-content: right;
-        text-align: left ;
-}
+        justify-content: space-between;
+    }
+    
+    .선택 select {
+        padding: 5px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: #fff;
+        cursor: pointer;
+    }
+    
