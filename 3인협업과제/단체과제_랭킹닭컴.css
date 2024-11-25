@@ -12,6 +12,63 @@ li{list-style: none;}
 }
 
 
+.chick { /* 메인 왼쪽 jpg */
+       width: 480px;
+}
+
+.선택 {
+     
+        
+      text-align: right;
+}
+
+
+#회원가 {    /* 상위 하위 클래스 개념이 지금 제대로 안되있어서 자꾸 적용이 틀리는것 */
+                /* div에 걸어서 flex 및 이것저것이 안걸림 list의 경우 상위는 ul */
+        display: flex;
+       justify-content:space-between; 
+       
+      width: 600px;
+}
+
+#회원가 > li {
+        display: flex;
+}
+
+
+#상자 {
+        display: flex;
+        justify-content: center;
+}
+
+#상자 > a {
+        width: 60px;
+        text-align: center;
+}
+
+
+#상자 > div {
+        width: 224px;
+        text-align: center;
+}
+
+/*-------------------------------------- 후단 */
+
+#후기 {
+        display: flex;
+}
+
+
+#제품{
+        display: flex;
+        background-color: #f8f8f8;
+}
+
+
+#bestli {    /*  상품리뷰 칸 */
+        
+        width: 300px;
+}
 
 
 li { font-size: 14px;
@@ -19,8 +76,19 @@ li { font-size: 14px;
 
 }
 
+.bestpic {
+        display: flex;
+        justify-content: left;
+        width: 300px;
+        height: 100px;
+}
 
-
+.bestpicture{
+        display: flex;
+        justify-content: right;
+        width: 100px;
+        height: 100px;
+}
 
 
 .가격머리{
