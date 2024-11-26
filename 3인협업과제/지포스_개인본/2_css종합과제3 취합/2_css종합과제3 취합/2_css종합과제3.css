@@ -1,8 +1,7 @@
 /* 전체 */
-*{  
-    border: 1px solid red;
-    margin: 3px;
-    padding: 10px;
+*{
+    margin: 0;
+    padding: 0;
 }
 li{
     list-style-type: none;
@@ -15,20 +14,14 @@ a{
 
 /* 헤더 시작 */
 
-#wrap {
- /*  width: 1320px;  안됨*/
-}
-
-
 #header{
     height: 44px;
     margin:0;
     padding:0;
     width:100%;}
     #header1
-
     #header2{display: flex;
-    justify-content: space-between; /* 이거 안먹이면 그림이 왼쪽으로 옮겨짐 */
+    justify-content: space-between;
     height: 44px;
     margin:0;
     padding:0;
@@ -38,8 +31,6 @@ a{
     width: 140px;
     }
     #rightbox{
-      /* display: flex;
-      justify-content: flex-end; 로고를 왼쪽 윗 상단으로 올리고 싶었으나 실패 */
     font-size:130%;}
     
     #header3{
@@ -57,8 +48,7 @@ a{
         
     }
     .driver{color:#ffff}
-    .alldriver{color:#999999;}
-    .gfd{color: #999999;}
+    .alldriver{color:#999999;}    
     .networking{color: #999999;}
     .farm{color: #999999;}
     .band{color: #999999;}
@@ -70,22 +60,17 @@ a{
 
 /* 헤더 끝 */
 
-/* 메인 시작 */    /* 메인 조작시 헤더 부분이 밀림 */
+/* 메인 시작 */   /* 여기서부터 내부분 */
 body {
-    
 
-    /* height ; 안먹힘 */
-    /* background-color: #f5f5f5; */
+    background-color: #f5f5f5;
     padding: 20px;
 
   }
-  .main { 
-    width: 1450px;   /*  */
+  .main {
+
     display: flex;
-    justify-content: center;
-    background-color: #f5f5f5;
-    /* gap: 20px; */
-/*     border 1000px; 왜인지는 모르겠는데 border가 안먹혀서 간격이 안벌어짐 */
+    gap: 20px;
 
   }
   
@@ -131,9 +116,8 @@ body {
   
   /* 뉴스 및 추천 */
   .news1 {
-     /* display: flex;
-     justify-content: ; */
-    /* flex: ;  안거는게 나을듯?*/
+    
+    flex: 2;
   }
   .news1 h2 {
     margin-bottom: 20px;
@@ -189,7 +173,7 @@ body {
   }
   .licont p {
     
-    color: #333;
+    color: #333;    /* 변경부분없음 */
     
   }
   
@@ -198,17 +182,11 @@ body {
 
 /* 푸터 시작 */
 /* 푸터1 시작 */
-
-/* #footer{
-  height: 30px;         
-} */     /* 푸터 사이즈를 작게 할수는 없을까? */
 #footer1{
-  
     background-color: black;
 }
 #footertop{
     width: 1320px;
-    /* height: 100px; */
     margin: 0 auto;
     padding: 60px 0px;
 }
