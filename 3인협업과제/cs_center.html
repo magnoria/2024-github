@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel='stylesheet' type='text/css' href='common.css'>
+    <link rel='stylesheet' type='text/css' href='cs_center.css'>
+
+    <!-- <script src="js/jquery-3.7.1.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#hjw-header-wrap").load("hjw-header.html");
+            $("#hjw-footer-wrap").load("hjw-footer.html");
+        });
+    </script>
+</head>
+
+<body>
+    <!-- 헤더 -->
+    <div id="hjw-header-wrap"></div>
+
+    <!-- 본문 -->
+    <div id="hjw-content-wrap" class="hjw-top-big-gap">
+        <div id="hjw-content">
+            <div id="hjw-content-top-subject" class="hjw-bottom-gap">
+                <h2><a href="#">고객센터</a></h3>
+            </div>
+
+            <!-- 왼쪽 구역 -->
+            <div id="hjw-content-flex">
+                <div id="hjw-content-left" class="hjw-right-gap">
+                    <div>
+                        <ul class="hjw-cs-center-left-box hjw-pad">
+                            <li class="hjw-ce-center-left-box-item hjw-list-border-bottom-article">
+                                <a href="#">공지사항</a>
+                            </li>
+                            <li class="hjw-ce-center-left-box-item hjw-list-border-bottom-article">
+                                <a href="#">이용안내</a>
+                            </li>
+                            <li class="hjw-ce-center-left-box-item hjw-list-border-bottom-article">
+                                <a href="#">자주묻는 FAQ</a>
+                            </li>
+                            <li class="hjw-ce-center-left-box-item hjw-list-border-bottom-article">
+                                <a href="#">1:1 문의하기</a>
+                            </li>
+                            <li class="hjw-ce-center-left-box-item ">
+                                <a href="#">고객의 소리</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <br />
+                    <!-- 고객센터정보 및 1:1 문의 -->
+                    <div>
+                        <ul class="hjw-cs-center-left-box hjw-pad30">
+                            <li>랭킹닭컴 고객센터</li>
+                            <li class="hjw-highlight hjw-bottom-pad">02-6405-8088</li>
+                            <li class="hjw-small-char">평일 10:00 ~ 18:00</li>
+                            <li class="hjw-small-char">주말, 공휴일 휴무</li>
+                            <br /><br />
+                            <hr id="hjw-divider">
+                            <br /><br />
+                            <li class="hjw-bottom-pad">1:1 문의</li>
+                            <li class="hjw-small-char">평일 09:00 ~ 18:00</li>
+                            <li class="hjw-small-char">토요일 09:00 ~ 15:00</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- 오른쪽 구역 -->
+                <div id="hjw-content-right">
+                    <!-- 상단 첫번째 -->
+                    <div id="hjw-content-right-top">
+                        <div id="hjw-content-right-top-wrap">
+                            <p class="hjw-highlight hjw-top-pad20 hjw-bottom-pad15">자주묻는 질문 검색</p>
+                            <input id="hjw-input" type="text" placeholder="   궁금하신 내용을 입력해주세요">
+                            <a href="#">
+                                <div id="hjw-ico-search"></div>
+                            </a>
+                            <p class="hjw-small-char hjw-bold-char hjw-right-pad480 hjw-top-pad10 hjw-bottom-pad20">
+                                <span>
+                                    <a href="#"><span class="hjw-small-char">주문&nbsp; |&nbsp;</span></a>
+                                    <a href="#"><span class="hjw-small-char">배송&nbsp; |&nbsp;</span></a>
+                                    <a href="#"><span class="hjw-small-char">특급배송&nbsp; |&nbsp;</span></a>
+                                    <a href="#"><span class="hjw-small-char">포인트</span></a>
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- 상단 두번째 -->
+                    <div id="hjw-content-right-mid">
+                        <div id="hjw-content-right-mid-subject" class="hjw-top-big-gap hjw-bottom-gap40">
+                            <p>랭킹닭컴 이용안내</p>
+                        </div>
+                        <div>
+                            <div id="hjw-content-right-mid-icons">
+                                <a href="#">
+                                    <div class="hjw-ico-cs-center"></div>
+                                </a>
+                                <a href="#">
+                                    <div id="hjw-ico-cs-center2" class="hjw-ico-cs-center"></div>
+                                </a>
+                                <a href="#">
+                                    <div id="hjw-ico-cs-center3" class="hjw-ico-cs-center"></div>
+                                </a>
+                                <a href="#">
+                                    <div id="hjw-ico-cs-center4" class="hjw-ico-cs-center"></div>
+                                </a>
+                                <a href="#">
+                                    <div id="hjw-ico-cs-center5" class="hjw-ico-cs-center"></div>
+                                </a>
+                            </div>
+                            <div id="hjw-content-right-mid-icons-desc">
+                                <span>배송조회 안내</span>
+                                <span>배송오류 안내</span>
+                                <span>현금영수증 안내</span>
+                                <span>포인트 안내</span>
+                                <span>특급배송 안내</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 상단 세번째 -->
+                    <div id="hjw-content-right-mid2" class="hjw-top-big-gap">
+                        <div>
+                            <ul>
+                                <li class="hjw-list-border-bottom-subject hjw-list-space-between">
+                                    <span class="hjw-highlight">자주묻는 FAQ TOP5</span>
+                                    <a href="#" class="hjw-small-char hjw-bold-char hjw-top-pad15">전체보기 >&nbsp</a>
+                                </li>
+                                <li class="hjw-list-border-bottom-article">
+                                    <a href="#">
+                                        <span class="hjw-question-mark">Q </span>
+                                        <span>[오렌지멤버스] 서비스는 이용하고 싶은데, 정기결제만 해지하고 싶어요.</span>
+                                    </a>
+                                </li>
+                                <li class="hjw-list-border-bottom-article">
+                                    <a href="#">
+                                        <span class="hjw-question-mark">Q </span>
+                                        <span>[오렌지멤버스] 24.01.19 이전 오렌지멤버스 가입자입니다. 기존 가입자에게도 회원 혜택이 변경 되나요?</span>
+                                    </a>
+                                </li>
+                                <li class="hjw-list-border-bottom-article">
+                                    <a href="#">
+                                        <span class="hjw-question-mark">Q </span>
+                                        <span>[오렌지멤버스] 오렌지멤버스의 모든 혜택이 알고 싶어요.</span>
+                                    </a>
+                                </li>
+                                <li class="hjw-list-border-bottom-article">
+                                    <a href="#">
+                                        <span class="hjw-question-mark">Q </span>
+                                        <span>[오렌지멤버스] 오렌지멤버스 가입 및 가입비 결제는 어떻게 하나요?</span>
+                                    </a>
+                                </li>
+                                <li class="hjw-list-border-bottom-subject">
+                                    <a href="#">
+                                        <span class="hjw-question-mark">Q </span>
+                                        <span>[오렌지멤버스] 오렌지멤버스는 무엇인가요?</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- 상단 네번째 -->
+                    <div id="hjw-content-right-mid3" class="hjw-top-big-gap">
+                        <div id="hjw-content-right-mid3-notice">
+                            <ul>
+                                <li class="hjw-highlight2 hjw-list-border-bottom-subject">공지사항</li>
+                                <li class="hjw-small-char2 hjw-list-border-bottom-article hjw-list-space-between">
+                                    <a href="#">랭킹닭컴 배송비 변경 안내</a><span class="hjw-small-char">2024.08.12</span>
+                                </li>
+                                <li class="hjw-small-char2 hjw-list-border-bottom-article hjw-list-space-between">
+                                    <a href="#">오렌지멤버스 혜택 변경 안내</a><span class="hjw-small-char">2024.07.11</span>
+                                </li>
+                                <li class="hjw-small-char2 hjw-list-border-bottom-article hjw-list-space-between">
+                                    <a href="#">2024년 10월 연휴 배송 안내</a><span class="hjw-small-char">2024.09.25</span>
+                                </li>
+                                <li class="hjw-small-char2 hjw-list-border-bottom-article hjw-list-space-between">
+                                    <a href="#">고객센터 단축 근무 안내</a><span class="hjw-small-char">2024.09.12</span>
+                                </li>
+                                <li class="hjw-small-char2 hjw-list-border-bottom-article hjw-list-space-between">
+                                    <a href="#">2024년 9월 추석 연휴 배송 안내</a><span class="hjw-small-char">2024.09.09</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div id="hjw-content-right-mid3-counsel">
+                            <ul>
+                                <li class="hjw-bold-char hjw-top-gap hjw-bottom-pad">전화상담</li>
+                                <li class="hjw-highlight2 hjw-bottom-pad">
+                                    <img src="img/icon/icon-call.svg" alt="">
+                                    02.6405.8088
+                                </li>
+                                <li class="hjw-small-char hjw-bold-char">평일 10:00 ~ 18:00 (점심시간 12:00 ~ 13:00)</li>
+                                <br />
+                                <li class="hjw-bold-char hjw-top-gap hjw-bottom-pad">1:1 문의 ></li>
+                                <li class="hjw-small-char hjw-bottom-pad">평일 09:00 ~ 18:00, 토요일 09:00 ~ 15:00</li>
+                                <li class="hjw-small-char">해당 시간 외에는 순차적으로 빠르게 답변드리겠습니다.</li>
+                            </ul>
+                            <br />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 푸터 -->
+    <div id="hjw-footer-wrap"></div>
+</body>
+
+</html>
