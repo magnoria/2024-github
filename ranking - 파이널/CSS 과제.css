@@ -1,0 +1,147 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+ 
+    text-align: center;
+
+}
+
+
+.container {
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 20px;
+    text-align: center;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.semi-title{
+    text-align: left
+
+}
+
+.txt {
+  font-size: 25px;
+
+}
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #f06522;
+}
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.checkbox-group {
+    display: flex;
+    
+    
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+.checkbox-group label {
+    display: flex;
+    align-items: center;
+}
+.checkbox-group input {
+    margin-right: 5px;
+}
+.btn-login {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: #f06522;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.btn-login:hover {
+    background-color: #d9541b;
+}
+.links {
+    margin-top: 20px;
+    font-size: 14px;
+}
+.links a {
+    text-decoration: none;
+    color: #555;
+    margin: 0 5px;
+}
+.links a:hover {
+    color: #f06522;
+}
+
+.sns-login-list{
+align-items: center;
+margin: 30px;
+}
+
+.blind > img{
+    margin-right: 5px;
+    width: 80px;
+}
+
+.semi-title span{
+    font-size:  25px;
+    font-weight: bold;
+}
+.btn-bottom-area{
+    border: 1px solid black;
+    border-radius: 5px;
+    height: 35px;
+    margin: 10px 0px;
+    /* display: flex
+; */
+    display: flex
+;
+    align-content: space-around;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.sns1{
+    width: 100px;
+}
+
+.sns2{
+    width: 43px;
+    margin-left: 10px;
+}
+
+.remember-me{
+    flex: content;
+    padding: 0 0 0 28px;
+
+}
+
+.remember-me2{
+    flex: content;
+    padding: 0 0 0 28px;
+
+}
+   
