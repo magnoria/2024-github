@@ -19,7 +19,13 @@ movieRating = [8,4,7,6]
 
 */
 
+moviRating = [8,4,7,6]
 
+movie = [히든페이스,위키드,글래디에이터2,청설]
+
+let html = `<div>${movi}</div><div>${movieRating}</div>`
+
+for ( )
 
 
     
