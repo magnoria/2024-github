@@ -12,3 +12,14 @@
 1. Number( )            : 정의: 숫자타입으로 변환 함수  / 매개변수 : 변환할 데이터 / 반환값 : 변환된 숫자데이터
 2. String( )            : 정의: 문자열타입으로 변환 함수 / 매개변수 : 변환할 데이터 / 반환값 : 변환된 문자열데이터
 3. parseInt( )          : 정의: 정수타입으로 변환 함수 / 매개변수 : 변환할 데이터 / 반환값 : 변환된 정수데이터
+
+
+//[2] '등록함수' 함수 정의
+function 등록함수(){//m start
+
+    // - DOM 객체( document ) : HTML을 조작 가능한 객체
+    document.querySelector(".클래스명")
+    document.querySelector('#클래스명')
+    document.querySelector('마크업명')
+
+}//m end
