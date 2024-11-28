@@ -24,3 +24,17 @@
 3. parseInt( )          : 정의: 정수타입으로 변환 함수 / 매개변수 : 변환할 데이터 / 반환값 : 변환된 정수데이터
 
 
+[날짜/시간 함수]
+    1.let nowDate = new Date() : 현재 시스템(컴퓨터)의 날짜와 시간을 반환 해주는 객체 생성
+
+    2. Date객체 함수
+        nowDate.getFullYear()   : 현재 날짜의 연도 반환
+        nowDate.getMonth()      : 현재 날짜의 월 반환, 0이 1월로 표현됨
+        nowDate.getDate()       : 현재 날짜의 일 반환
+        nowDate.getHours()      : 현재 시간의 시 반환
+        nowDate.getMinutes()    : 현재 시간의 분 반환
+        nowDate.getSeconds()    : 현재시간의 초 반환
+
+    3.주의할점 : 월과 일이 한자리수 이면 한자리수로 표현, 두자릿수로 맞춤을 할려면 변경필요
+        nowDate.getMonth()+1 < 10 ? "0" + (nowDate.getMonth(+1)) : nowDate.getMonth()+1
+        만약에 월이 10미만(한자릿수) 이면 0을 연결해주고 아니면 
