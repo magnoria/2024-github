@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+    <div>
+        <h1> 게시물 쓰기 페이지.html </h1>
+        <form>
+            제목 : <input class="title" type="text" /> <br/>
+            내용 : <textarea class="content" cols="20" rows="5" ></textarea> <br />
+            비밀번호 : <input class="password" type="password" /> <br/>
+            <button onclick="등록함수()" type="button" > 등록 </button>
+        </form>
+    </div>
+
+    <div>
+        <h1> 게시물 목록 페이지.html </h1>
+        <table border="1"> <!-- table : 테이블 마크업 -->
+            <!-- thead : 테이블 제목 마크업(구분용) , tr : 테이블 행 , th : 테이블 제목 셀(1칸) -->
+            <thead> <tr> <th>작성일</th> <th>제목</th> <th>조회수</th> </tr> </thead>
+            <!-- tbody : 테이블 본문 마크업(구분용) , 샘플 -->
+            <tbody> 
+                <tr> <td> 2024-11-25 </td> <td> 첫번째 게시물 제목 </td> <td> 3 </td> </tr>
+                <tr> <td> 2024-11-26 </td> <td> 두번째 게시물 제목 </td> <td> 2 </td> </tr>
+                <tr> <td> 2024-11-27 </td> <td> 세번째 게시물 제목 </td> <td> 0 </td> </tr>
+            </tbody> 
+        </table>
+    </div>
+
+    <div>
+        <h1> 게시물 상세 페이지.html </h1>
+        제목 : <span class="titleBox" > 게시물 제목이 들어갈 자리 </span> <br/>
+        내용 : <span class="contentBox"> 게시물 내용이 들어갈 자리 </span> <br/>
+        작성일/조회수 : <span class="dateBox"> 2024-11-28 </span> / 
+                        <span class="viewBox"> 3 </span> <br/>
+        <div class="btnBox">
+            <button onclick="삭제함수()" type="button">삭제</button> 
+            <button type="button">수정</button>
+        </div>
+    </div>
+    
+    <script src='1_중간과제8_교수님꺼.js'></script>
+</body>
+</html>
