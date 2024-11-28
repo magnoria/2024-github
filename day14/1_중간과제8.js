@@ -158,30 +158,80 @@ function 등록함수(){ console.log('등록함수 실행');    /* 명이 기본
 출력함수();
 function 출력함수(){
     // (1)어디에 , table > tbody , documet.querySelector(선택자)
-    document.querySelector( 'table > tbody')
+    let tbody = document.querySelector( 'table > tbody')
 
     // (2)무엇을 , 배열을 요소들을
-    let html = ''
+    let html = '';
     for (let index = 0 ; index <= 게시물목록.length -1 ; index++){
-        //index는
+        //index는 0부터 마지막 인덱스까지 1씩 증가 반복
+        let board = 게시물목록[index];
+        // 하나의 게시물을 csv 구성 했기 때문에 게시물정보 분해
+        //문자열.split('기준문자) : 
+        let info = board.split(',');
 
 
-
+        html += `<tr>
+                    <td>${info[3]}</td>
+                    <td><a href="#" onclick="상세출력함수(${index})">${info[0]}<a></td> 
+                    <td>${info[4]}</td>
+        
+                </tr>`;
+                                    // 여기서 $안의  index는 값만 출력하는것  
+        
 
 
     }
     
+     // (3)출력 , .innerHTML
+     tbody.innerHTML = html;//변수 =새로운값, .변수 = 새로운값
     
-    
-    
-    let html = 'test'
+   
 
-    // (3)출력 , .innerHTML
-    tbody.innerHTML = html; //변수 =새로운값, .변수 = 새로운값
+}//f end
+
+//[3]상세 출력 함수 , 실행조건 : 전체출력화면에서 특정한 제목을 클릭했을때
+function 상세출력함수(index){  // index :매개변수 , 상세 출력할 배열의 인덱스를 받기
+    console.log('상세출력함수 실행');
+    console.log(index);
+    //1. 어디에 , document.querySelector()
+    //2. 무엇을, 배열정보를 
+
+    //let title = 게시물목록 [index].split(',') //선택한 인덱스의 게시물 호출 아래쪽을 이걸로 바꿔도 됨
+
+    let board = 게시물목록[index];
+    let info = board.split(',')
+
+
+    // 3. 출력, innerHTML
+    document.querySelector('.titleBox').innerHTML = info[0]
+    document.querySelector('.contentBox').innerHTML = info[1]
+    document.querySelector('.dateBox').innerHTML = info[3]
+    document.querySelector('.viewBox').innerHTML = info[4]
+    document.querySelector('.btnBox').innerHTML = `<button onclick="삭제함수()" type="button">삭제</button>
+        <button type="button">수정</button>`
+
+
+
+
+        /* 여기로 넣는 잉휴 */
+
+
+
+  
+    
+   
 }
 
+
 //[4]삭제함수  , 실행조건 :[삭제]버튼 클릭시
-function 삭제함수(){}
+function 삭제함수(index){ //  매개변수 , 삭제할 인덱스 번호
+    console.log('삭제함수실행');
+    console.log(index);
+    //1. 배열내 특정한 인덱스의 요소 제거, 배열변수명 .spklice(삭제할인덱스, 개수)
+    게시물목록.splice(index,1); // 내가 선택한 게시물의 인덱스를 삭제
+    //2. 화면 새로고침/ 다시 출력 / 다시 함수 호출 
+    출력함수();
+}
 
 //[5]수정함수   , 실행조건 : [수정] 버튼 클릭시
 function 수정함수(){}
