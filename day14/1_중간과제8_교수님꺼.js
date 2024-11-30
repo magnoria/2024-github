@@ -114,7 +114,7 @@ function 출력함수( ){
             // 각 정보들을 HTML 과 연동해서 작성하기 
             html += `<tr>
                         <td> ${ info[3] } </td>
-                        <td> <a href="#" onclick="상세출력함수( ${ index } )">${ info[0] }</a> </td>
+                        <td> <a href="#" onclick="상세출력함수( ${ index } )"> ${ info[0] } </a> </td>
                         <td> ${ info[4] } </td>
                     </tr>`; // 변수 += 값  vs 변수 = 변수 + 값  , 기존변수에 새로운 값을 누계/연결 
             //console.log( html );
