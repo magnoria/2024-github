@@ -8,9 +8,10 @@
     <div>
         <h3>사원 평가 목록</h3>
         <from>
-            사원번호 : <input class="no" type="text" />
+           
             사원이름 : <input  class="name" type="text" />
             생년월일 : <input  class="birth" type="date" />
+             
             <!-- 평가점수 : <input type="text" /> -->
             <button onclick="regi()" type="button">입력 </button>
 
@@ -27,16 +28,16 @@
             <thead>
                 <tr>
 
-                        <th class="no">사원번호</th>
+                        <th>사원번호</th>
                         <th class="name">사원이름</th>
                         <th class="birth">생년월일</th>
-                        <th class="rating">평가등록</th>
-                        <th class="year">평가년도</th>
+                        <th class="rating">평가</th>
+                       
 
                 </tr>
             </thead>    
 
-            <tbody>
+            <tbody class="ofitable">
                 <h3>평가내역</h3>
                     <tr>
                         <th>1</th><th>유재석</th><th>1998-01-20</th><th>상</th><th>2020년</th>
@@ -50,12 +51,18 @@
                         <th>2</th><th>유재석</th><th>1998-01-20</th><th>중</th><th>2018년</th>
                     </tr>
                    
-                
+              
                 
                 
                    
             </tbody>
+           
+            
         </table>
+        
+    </div>
+    <div class="inputrating">
+                    
     </div>
 
 
