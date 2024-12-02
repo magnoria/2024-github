@@ -1,4 +1,10 @@
-let 연습 = 10 + 10
-연습 += 3; // 저장한 변수를 그대로 쓰고 출력만 가능하며 += 3은 3을 더해서 넣는다 라는
-            //개념으로 이해할것 - * 다 가능
-console.log(연습 + 3); // 이렇게해도 바로 3을 더하기 가능
+let 인사평가 = [""]
+
+let 사번 = 0
+
+function 입력(){
+    let 이름 = document.querySelector('.name').value;
+    let 생년월일 = document.querySelector('.name').value;
+    let 상반기점수 = document.querySelector('.first').value;
+    let 하반기점수 = document.querySelector('.second').value;
+}
