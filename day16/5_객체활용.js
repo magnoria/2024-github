@@ -53,7 +53,7 @@
     사원목록.push(사원2);
     
     
-    console.log(사원목록);
+    //console.log(사원목록);
 
         //3. 평가 객체 생성, 샘플3개
     let 점수1 = {no:1, year:'2024', first : 100, second : 80 }; //유재석 2024평가등록
@@ -74,10 +74,10 @@
     //[1] 사원 등록 함수, 실행조건 : [사원등록]버튼 클릭할때 실행
     function 사원등록() {
         //1. 입력 , 각 선택자(클래스)와 일치한 input의 value 값 가져오기
-        let name = document.querySelector('.name').value;
+        let rename = document.querySelector('.name').value;
        // console.log(name);
         
-        let birth = document.querySelector('.birth').value;
+        let rebirth = document.querySelector('.birth').value;
         //console.log(birth);
         
 
@@ -87,9 +87,9 @@
             //console.log(eno);
             
         let info = {
-            사원번호 : eno, //사원번호는 자동으로 1씩증가
-            이름 : name, // 사원명은 입력받은 name
-            생년월일 : birth // 생년월일은 입력받은 birth
+            no : eno, //사원번호는 자동으로 1씩증가
+            name : rename, // 사원명은 입력받은 name
+            bibirth : rebirth // 생년월일은 입력받은 birth
         }
 
         //console.log(info);
@@ -113,6 +113,8 @@
     function 사원전체출력(){
         //1. 어디에
         let tbody = document.querySelector('.사원테이블');
+        console.log(tbody);
+        
 
         //2. 무엇을
         let html = ``;
@@ -121,23 +123,25 @@
             //index 는 0부터 사원목록의 마지막 인덱스까지 1씩 증가 반복
             let info = 사원목록[index]; // index번째의 사원정보 1개 호출
             html += `<tr>
-                        <td> ${info.사원번호} </td>
-                        <td> ${info.사원명} </td>
-                        <td> ${info.생년월일} </td>
+                        <td> ${info.no} </td>
+                        <td> ${info.name} </td>
+                        <td> ${info.birth} </td>
                         <td>
                             <button onclick="평가등록출력(${info.사원번호})" type="button">평가등록</button>
                             <button type="button">평가결과</button>
                         </td>
                     </tr>`
+                    
+                    
         }
-
+        //console.log(html);
         //3. 출력
         tbody.innerHTML = html;
 
     }
 
 // [3] 평가 등록 구역 출력 함수, 실행조건 : [평가등록] 버튼을 클릭했을때
-function평가등록출력(클릭된사원번호){ //매개변수 : 클릭된 사원번호가
+function 평가등록출력(클릭된사원번호){ //매개변수 : 클릭된 사원번호가
     //console.log(클릭된사원번호);
     // 사원번호를 이용한 사원정보 찾기
     let 검색사원 = null; //2. '검색사원'을 찾기 전 변수를 선언하여 결과를 저장할 변수, null 객체가 없다는 뜻
