@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+   
+</head>
+<body>
+
+    <div>
+        <h3>사원 등록</h3>
+        <form>
+            사원명 : <input class="name" type="text"/>
+            생년월일 : <input class="birth" type="date"/>
+            <button onclick="사원등록()" type="button">사원 등록</button>
+        </form>
+    </div>
+
+
+    <div>
+        <h3>사원 목록</h3>
+        <table border="1"><!-- 이렇게 예시를 만들어줘야함 -->
+            <thead> 
+                <tr>
+                    <th>사원번호</th>
+                    <th>사원명</th>
+                    <th>생년월일</th>
+                    <td>비고</td>
+                </tr>
+            </thead>
+            <tbody class="사원테이블">
+                <tr><td>유재석</td><td>2000-01-01</td></tr>
+                <tr><td>강호동</td><td>1950-02-11</td></tr>
+                <tr><td>신동엽</td><td>2000-01-01</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+
+    <div class=" 평가입력구역">
+       
+    </div>
+
+
+    <div>
+        <h3>사원 평가 목록</h3>
+        <table border="1">
+            <thead><tr><th>연도</th><th>상반기</th><th>하반기</th></tr></thead>
+            <tbody>
+                <tr><td>2023 <td>100</td> <td>92</td></tr>
+                <tr><td>2022 <td>100</td> <td>92</td></tr>
+                <tr><td>2021 <td>80</td> <td>92</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+
+
+
+
+
+
+    <script src='5_객체활용.js'></script>
+</body>
+</html>

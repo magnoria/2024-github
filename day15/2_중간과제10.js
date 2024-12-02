@@ -44,7 +44,7 @@ function 입력(){
 }
 
 
-let html = '';
+
 
 function 출력(){
    /*  let 출력 = document.querySelector('tbody > tr');
