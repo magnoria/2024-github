@@ -38,7 +38,7 @@ function regi() {
         name : rename,    // , 빼먹지 말기
         birth : rebirth
     } 
-    console.log(info);
+    //console.log(info);
     
     ofice.push(info);
     //console.log(ofice);
@@ -61,7 +61,7 @@ function ofioutput(){
     for( let index = 0; index <= ofice.length-1 ; index++){ /* 사원목록 내에 사원번호 올리기 */
         
         let info = ofice[index];
-        console.log(info);
+        //console.log(info);
         
             html += `<tr>
                         <th>${info.no}</th>
@@ -103,7 +103,8 @@ function astima(onclickno){
     }// if end
 
     //1. 어디에
-    let div =document.querySelector('.inputrating')
+    let div = document.querySelector('.inputrating')
+
     //2.무엇을
     let html = `<h3> 평가 </h3>
                 <form>
