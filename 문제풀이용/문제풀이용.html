@@ -1,24 +1,51 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-
    
+    <link rel='stylesheet'  href='문제풀이용.css'>
     
 </head>
-
 <body>
-    <div>
-        <h3>사원등록 </h3>
-        <form>
-            사원명 : <input class="name" type="text"/>
-            생년월일 : <input class="birth" type="date"/>
-            <button onclick="사원등록"
+    
+    <div id="wrap">
+        <h1 class="title">나만의 할일 목록</h1>
+        <div id="todoTop">
+            <input class="contentInput"/>
+            <button onclick="등록함수()" class="addBtn">등록</button>
+        </div><!-- top end -->
 
-        </form>
-    </div>
-   
-    <script src='문제풀이용.js'></script>
+        <div id="todoBottom">
+
+            <div class="contentBox">
+                <div class="content">1교시수업듣기</div>
+                <div class="contentBtns">
+                    <button class="updateBtn">수정</button>
+                    <button class="deleteBtn">삭제</button>
+                </div><!-- btns end -->
+        
+            </div><!-- content end -->
+
+            <!-- start -->
+            <div class="contentBoxsuccess">
+                <div class="content">마지막수업듣기</div>
+                <div class="contentBtns">
+                    <button class="updateBtn">수정</button>
+                    <button class="deleteBtn">삭제</button>
+                </div><!-- btns end -->
+        
+            </div><!-- content end -->
+
+            
+        </div><!--Bottom end -->
+
+
+
+
+    </div> <!-- wrap end -->
+
+
+
+    <script src='문제풀이용.js'></script> 
+    <!-- 중요 : script는 읽는방식이 위에서 js거쳐서 html body를 읽기때문에 body마지막쪽 또는 적용 코드 아래쪽에 두는게 좋음 -->
 </body>
-
 </html>
