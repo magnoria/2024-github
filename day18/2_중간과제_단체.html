@@ -1,0 +1,96 @@
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <link rel='stylesheet' href='2_중간과제14.css'>
+    </head>
+    <body>
+        <div id="wrap">
+            <h2>도서 관리 시스템</h2>
+            <div class="btn">
+                <input class="book1" type="text" placeholder="도서명"/>  
+                <input class="book2" type="text" placeholder="출판사"/>
+                <input class="book3" type="text" placeholder="도서위치"/>
+                <button onclick="" type="button">도서등록</button>
+            </div>
+    
+            <div>
+                <table border="1" class="table">
+                    <thead>
+                        <tr>
+                            <th>도서코드</th>
+                            <th>도서명</th>
+                            <th>출판사</th>
+                            <th>위치</th>
+                            <th>수정 / 삭제</th>
+                        </tr>
+                    </thead>
+                    <tbody class="tbody1">
+                        <tr>
+                            <td>1</td>
+                            <td>비행운</td>
+                            <td>민음사</td>
+                            <td>A-1</td>
+                            <td>
+                                <button onclick="수정함수(1)" type="button">수정</button>
+                                <button onclick="" type="button">삭제</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>비행운</td>
+                            <td>민음사</td>
+                            <td>A-1</td>
+                            <td>
+                                <button onclick="수정함수()" type="button">수정</button>
+                                <button onclick="" type="button">삭제</button>
+                            </td>
+                        </tr>
+                    </tbody>
+    
+                </table>
+            </div>
+    
+            <br/>
+            <br/>
+            <br/>
+            <div>
+                <input class="num1" type="text" placeholder="재고량"/>
+                <input class="num2" type="text" placeholder="정가"/>
+                <input class="num3" type="date" placeholder="입고날짜"/>
+                <button onclick="" type="button">재고등록</button>
+            </div>
+                
+            <div>
+                <table border="1" class="table">
+                    <thead>
+                        <tr>
+                            <th>도서코드</th>
+                            <th>재고량</th>
+                            <th>정가</th>
+                            <th>입고날짜</th>
+                            <th>수정 / 삭제</th>
+                        </tr>
+                    </thead>
+                    <tbody class="tbody2">
+                        <tr>
+                            <td>1</td>
+                            <td>250</td>
+                            <td>6,500</td>
+                            <td>12/4</td>
+                            <td>
+                                <button onclick="" type="button">수정</button>
+                                <button onclick="" type="button">삭제</button>
+                            </td>
+                        </tr>
+                    </tbody>
+    
+                </table>
+            </div>
+    
+        </div>
+    
+    
+        <script src='2_중간과제14.js'></script>
+    </body>
+    </html>

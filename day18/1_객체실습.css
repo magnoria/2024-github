@@ -1,0 +1,46 @@
+/* 달력 상단 구역 */
+#calTop{
+    display: flex; /* 하위요소들 배치 */
+    align-items: center;
+    justify-content: center;
+    
+    
+    
+}
+
+#calTop >h6 {
+    text-decoration-style: solid;
+    text-align: center;
+    width: 10%;
+    font-size: 13px;
+    background-color: skyblue;
+  
+
+}
+
+
+
+#calBottom{
+    display: flex; /* 하위요소들 배치 */
+    flex-wrap: wrap; /* 하위 요소들이 자동으로 줄바꿈 */
+   
+    
+}
+
+#calBottom >.sun{
+   color: red;
+}
+
+
+#calBottom > div{
+    width: 14%; /* 부모요소의 가로 사이즈 100% 의 7등분 */
+    height: 50px;
+    border: 1px solid skyblue;
+    border-radius: 5px;
+
+}
+
+div >.sun {
+    background-color: skyblue;
+
+}
