@@ -1,1 +1,30 @@
-*{border: 1px solid skyblue}
+#wrap{
+    width: 500px; margin: 0 auto;
+    text-align: center;
+    
+}
+
+#todotop{
+    display: flex;
+    justify-content: center;
+    
+    
+}
+
+
+.contentBox{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0px;
+    padding: 15px 10px;
+    background-color: salmon;
+    border-radius: 10px;
+    
+}
+
+
+
+.success{
+    background-color: skyblue;
+    color: aliceblue;
+    }

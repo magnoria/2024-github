@@ -1,68 +1,49 @@
 <!DOCTYPE html>
 <html>
 <head>
-   
+  
     <link rel='stylesheet' type='text/css' media='screen' href='todolist.css'>
    
 </head>
 <body>
-
+    
     <div id="wrap">
-            <h3>todolist</h3>
-        <div id="top">
-            <input  class="vlaue"/>
-            <button onclick="input()" class="topbotton"> 버튼</button>
+        <h1 class="title">할일목록</h1>
+        <div id="todotop">
+            <input class="textInput"/>
+            <button onclick="input()" class="topBotn">등록</button>
+
         </div>
 
         <div id="bottom">
 
-           <!-- <div class="chekbox">   chekbox를 두개로 나누는게 편함  이게 다름-->
-
-                <div class="contentbox1">
-
-                    <div class="content" > 밥먹자<!----></div>
-                    
-                        밥먹자<!---->
-                        <button onclick="reput()" >수정</button>
-                        <button onclick="deletebox()">삭제</button>
-                        
-                   <!--</div>이걸 따로 넣었는데 그냥 content잡을것 사실 지금 칸 나누기도 제대로 안잡힌듯-->
-            
+            <div class="contentBox">
+                <div class="content">1교시 수업듣기</div>
+                <div class="btnGroup">
+                    <button class="reput">수정</button>
+                    <button class="deletput">삭제</button>
                 </div>
+            </div>    
+        
 
-            
-                <div class="chekbox1" >
-                
-                    잠자자
-                    <button onclick="reput()" >수정</button>
-                    <button onclick="deletebox()">삭제</button>
-                    
+            <div class="contentBox">
+                <div class="content">2교시 망함</div>
+                <div class="btnGroup">
+                    <button class="reput">수정</button>
+                    <button class="deletput">삭제</button>
+
                 </div>
+            </div>
 
 
 
-
-
-
-            <!-- </div> -->
 
 
 
         </div>
 
 
-
-
-
     </div>
-
-
-
-
-
-
-
-
 
 
 

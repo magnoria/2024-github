@@ -1,103 +1,83 @@
 
-// 배열
-
-let bound = [ 
-    { number : 1 , subject : 밥먹자 },
-    { number : 2 , subject : 잠자자 }
+let todolist = [
+    { code : 1 , content : "수업듣기" , state : true},
+    { code : 2 , content : "밥먹기" , state : false}
 ]
 
 
-
-//입력
-
-    info = 3;
+let recode = 3;
 
 function input(){
+    let recontent = document.querySelector('.textInput').value;
 
-    //무엇을
-        //html에 벨류값을 가져와서 저장해야한다.
-        let text = quleselecter().value
-
-    let info = [ {number : 3 , subject :  text }
-        
-    ]
-
-    //저장
-
-
-    for( let index = 0; index <= bound.length-1 ; index++){// 돌린다 왜? 추가해야하니까
-
-        let //여기서 인덱스 수를 올린다.
-
-
-
-        //나온값을 bound에 넣는다.
-
-        //인덱스 번호가 올라감으로 추가된다
-
-
-
+    let retodolist = {
+        code : recode,
+        content : recontent,
+        state : false
     }
-    
 
+    todolist.push(retodolist);
+    recode++
 
-    //
-    output(); //출력값을 입력과 동시에 출력한다.
+    output();
+    alert('입력완료')
+    document.querySelector('.textInput').value = '';
+    return;
 
 }
 
 
-html = '';
-
-//출력
+output();
 function output(){
-    //무엇을?
-     
 
+    let bottom = document.querySelector('#bottom'); //botoom으로 했었었는데 문제가 생기지는 않음 ?? 아마 list로 대체되서 그런듯
+
+    let html = ''
+
+    for(let index = 0; index <= todolist.length-1; index++){
+
+        let info = todolist[index];
+
+        html += `<div class="contentBox ${info.state == true ? 'success' : ''}"> 
+                <div class="content">${info.content}</div>
+                <div class="btnGroup">
+                    <button onclick = "dif(${info.code})" class="reput">수정</button>
+                    <button onclick = "remove(${info.code})" class="deletput">삭제</button>
+                </div>
+            </div>    `
+    }
+    //console.log(todolist); 기본 false 상태 그이유는 input에서 false로 넣었기 때문
     
-    
-    
-    //어디에 html에
+    bottom.innerHTML = html; // 오타존재 bottom 을 botoom으로 침
 
-     bottom.innerHTML = html
-
-
-     //값을 html에 넣고 += 를해서 checkbox 사이에 넣는다.
+    return;
 
 }
 
-
-
-
-//수정
-
-function reput(){
-
-
-
-
-    for( let index = 0; index <= bound.length-1; index++)
-    {
-
-        if( number == ? )
-
-            let
-
-        )
+function remove(movecode){
+    for(let index = 0; index <= todolist.length-1 ; index++){
+        if(todolist[index].code == movecode){
+            todolist.splice(index,1);
+            break;
+        }
 
     }
 
-
-
+    output();
+    return;
 
 }
 
-    // 버튼 받은 인덱스 넘버와 for문을 돌려 index번호를 확인한다.
-            //if문을 써서 맞으면
-    
+function dif(difcode){
+    for(let index = 0; index <= todolist.length-1; index++){
 
+        if(todolist[index].code == difcode) { // todolist 인덱스 코드와 difcode 즉 누른 버튼 입력 이 같다면
+            let restate = todolist[index].state //todolist 인덱스 상태를 restate 저장하고
+            todolist[index].state = !restate // todolist 인덱스 상태가 !restate 즉 restate 반대 상태가 된다. input에서 기본 false상태로 했으므로 그 반대 true 완료 상태가 된다
+            break;
+        }
+    }
+    output();
+    return;
+}
 
-
-
-
-//삭제
