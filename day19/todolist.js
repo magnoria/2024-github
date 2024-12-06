@@ -31,6 +31,7 @@ output();
 function output(){
 
     let bottom = document.querySelector('#bottom'); //botoom으로 했었었는데 문제가 생기지는 않음 ?? 아마 list로 대체되서 그런듯
+    //bottom은 HTML 요소를 참조해야 하지만, 코드에서 document.querySelector를 사용해 정의하지 않았다.  안넣었을경우의 문제인데 어디에?인 장소를 지정해줘야하는듯 
 
     let html = ''
 
