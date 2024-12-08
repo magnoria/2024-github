@@ -67,6 +67,7 @@ for(let i = 1; i <= 3; i++) {
 //[3] 점수배열2 에 저장된 모든 요소들을  <li> 마크업에 출력하시오.
 
 let outHTML = `<ol>`
+
     outHTML += `<li> ${점수배열2[0]} <li>`
     outHTML += `<li> ${점수배열2[1]} <li>`
     outHTML += `<li> ${점수배열2[2]} <li>`

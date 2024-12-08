@@ -6,10 +6,119 @@
 강의 카카오톡방에 ip 링크 제출 -->
 
 
-<!-- 별찍기 좌석출력 day12       5
+<!-- 
+별찍기 좌석출력 day12       5
 회원가입 로그인day 13       7
 인사관리 시스템 day 15       10
 r공공데이터 api   day16      11
 todolist 안보고 치기   day19     15
  -->
 
+
+
+ 우선 별찍기를 할려고 하고 있으나 todolist도 연습을 해야하고 검색을 하다보니 시간이 가버렸다.
+개념정리보다는 우선은 코드를 치는 쪽으로 연습하자 
+
+
+
+[1] 아래 배열을 이용한 아래 출력 형식으로 구현하기
+영화이름 목록,
+movieName = ['히든페이스', '위키드', '그래디에터2', '청설']
+
+
+영화 평점 목록, 각 영화별 평점은 10점 만점
+movieRating = [8,4,7,6]
+3. HTML 예시
+    히든페이스       ★★★★★★★★☆☆
+    위키드           ★★★★☆☆☆☆☆☆
+    글래디에이터2    ★★★★★★★☆☆☆
+    청설             ★★★★★★☆☆☆☆
+
+기본적으로 규칙성을 찾아보자 
+기본적으로 html로 리스트 형식으로 나오게끔 표현한다
+별을 검정과 흰색을 변수에 저장한다.
+4부터 6, 7, 8 까지는 있으므로 5만 반복문에서 제외한다.
+
+*/
+
+
+/* let movieRating = [8,4,7,6];
+let movieName = ['히든페이스', '위키드', '글래디에이터2', '청설']
+
+console.log(movieName);
+
+
+
+for(let index = 0; index <= movieName.length-1; index++){
+
+    let html = `<li>${movieName[index]}</li>`
+
+   document.print(html[index]);   
+
+
+}
+ */
+
+
+
+//아래쪽처럼 출력할 내용을 만들고 html에 저장한다음 ``을 써서 출력하는것까지는 알겠다.
+//다만 for문으로 index를 돌려서 영화 목록을 하나씩 꺼내 ${}에 저장한것을 출력하는것 까지는 알겠으나 
+//이걸 코드로 어떻게 해야할지 모르겠다.
+
+//
+
+
+
+
+/* let 사원1 =prompt(); // [1][2] prompt()함수를 사용하여 입력받은 값을 변수에 대입했다.
+let 사원2 =prompt(); // [1][2] prompt()함수를 사용하여 입력받은 값을 변수에 대입했다.
+let 출력할내용 = `<table>
+                    <tr>
+                    <th> 번호 </th><th> 사원명 </th>
+                    </tr>
+                    <tr>
+                    <td> 1 </td><td> ${사원1}</td>
+                    </tr>
+                    <tr>
+                    <td> 2 </td> <td> ${사원2} </td>
+                    </tr>
+                </table>`
+
+document.write(출력할내용)
+ */
+
+
+
+
+
+
+
+ 
+
+//별출력
+
+let linefor = [4,5,6,7]
+let out = '';
+
+
+for(let line = 1; line <= 4; line++){
+    1
+    console.log(line);
+    
+
+    for(let star = 4; star <= linefor.length-1; star++){
+        
+        out += '*'
+
+        console.log(out);
+        
+        
+    }
+
+  
+
+}
+
+console.log(out);
+
+별출력 나름대로 만들려다가 또 막힘 
