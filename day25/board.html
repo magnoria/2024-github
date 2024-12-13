@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+
+    <div id="wrap">
+        <ul id="header">
+            <li><a href="index.html">홈로고</a></li>
+            <li><a href="board.html">자유게시판</a></li>
+        </ul>
+    </div>
+
+    <div id="container">
+        <h3>게시판</h3>
+        <button type="button"></button>
+        <div>
+            <table border="1"> <!-- table : 테이블 마크업 -->
+                <!-- thead : 테이블 제목 마크업(구분용) , tr : 테이블 행 , th : 테이블 제목 셀(1칸) -->
+                <thead>
+                    <tr>
+                        <th>작성일</th>
+                        <th>제목</th>
+                        <th>조회수</th>
+                    </tr>
+                </thead>
+                <!-- tbody : 테이블 본문 마크업(구분용) , 샘플 -->
+                <tbody>
+                    <tr>
+                        <td> 2024-11-25 </td>
+                        <td> 첫번째 게시물 제목 </td>
+                        <td> 3 </td>
+                    </tr>
+                    <tr>
+                        <td> 2024-11-26 </td>
+                        <td> 두번째 게시물 제목 </td>
+                        <td> 2 </td>
+                    </tr>
+                    <tr>
+                        <td> 2024-11-27 </td>
+                        <td> 세번째 게시물 제목 </td>
+                        <td> 0 </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    </div>
+
+    <div id="footer">
+
+    </div>
+
+    <script src="./js/data.js"></script> <!-- js파일 호출 -->
+    <script src="./js/board.js"></script>
+
+</body>
+
+</html>
