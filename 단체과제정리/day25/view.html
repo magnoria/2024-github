@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+<body>
+
+    
+    <div id="wrap">
+        <ul id="header">
+            <li> <a href="index.html">홈로고</a> </li>
+            <li> <a href="board.html">자유게시판</a></li>
+        </ul>
+        <div id="container">
+            <h3> 게시물 조회 </h3>
+            <div>
+                제목 : <span class="titleBox" > 게시물 제목이 들어갈 자리 </span> <br/>
+                내용 : <span class="contentBox"> 게시물 내용이 들어갈 자리 </span> <br/>
+                작성일/조회수 : <span class="dateBox"> 2024-11-28 </span> / 
+                                <span class="viewBox"> 3 </span> <br/>
+                <div class="btnBox">
+                    <button onclick="삭제함수()" type="button">삭제</button> 
+                    <button type="button">수정</button>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+
+        </div>
+    </div>
+
+    <script src="./js/data.js"></script>
+    <script src="./js/view.js"></script>
+    
+</body>
+</html>
