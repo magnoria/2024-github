@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+
+</head>
+<body>
+    <div id="wrap">
+        <ul id="header">
+            <li> <a href="index.html">홈로고</a> </li>
+            <li> <a href="board.html">자유게시판</a></li>
+        </ul>
+        <div id="container">
+            <h3>게시판</h3>
+            <button type="button"><a href="write.html">글쓰기</a></button>
+            <div> <!-- day14 중간과제8 에서 출력관련 HTML 복사봍여넣기 -->
+                <table border="1">
+                    <thead> <tr> <th>작성일</th> <th>제목</th> <th>조회수</th> </tr> </thead>
+                    <tbody> 
+                        <tr> <td> 2024-11-25 </td> <td> 첫번째 게시물 제목 </td> <td> 3 </td> </tr>
+                        <tr> <td> 2024-11-26 </td> <td> 두번째 게시물 제목 </td> <td> 2 </td> </tr>
+                        <tr> <td> 2024-11-27 </td> <td> 세번째 게시물 제목 </td> <td> 0 </td> </tr>
+                    </tbody> 
+                </table>
+            </div>
+        </div>
+        <div id="footer">
+        </div>
+    </div>
+    <script src="./js/data.js"> </script>   <!-- JS 파일 호출 -->
+    <script src="./js/board.js"> </script> 
+    
+</body>
+</html>
