@@ -47,7 +47,7 @@ function getBoardList(){
      let boardList = getBoardList();
  
      //2. 게시물 목록에서 삭제할 번호의 인덱스 찾기
-     for(let index = 0 ; index <= boardList.length-1 l; index++){
+     for(let index = 0 ; index <= boardList.length-1; index++){
          if( boardList[index].bno == bno){
              deleteIndex = index;
              break;
