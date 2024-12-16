@@ -20,7 +20,7 @@ function 출력함수( ){
 
              
             html += `<tr>
-                        <td> ${ {board.date} } </td>
+                        <td> ${board.date } </td>
                         <td> <a href="view.html?bno=${board.bno}" > //이게 쿼리 스트링
                          ${ board.content } </a> </td>
                         <td> ${ board.view } </td>

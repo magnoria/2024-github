@@ -29,7 +29,7 @@ function getBoardList(){
      for( let index = 0; index <= boardList.length-1; index++){
           if(boardList[index].bno == bno){
                //만약에 index번째의 게시물의 번호와 조회할 번호와 같으면
-               return boardListp[index]; //찾은 게시물 객체 반환
+               return boardList[index]; //찾은 게시물 객체 반환
           }
      } //for end
      return null; // 조회할 게시물번호와 일치한 게시물 객체를 못찾을경우 
